@@ -1,7 +1,7 @@
 {
   "Name": "Microsoft.Azure.WebJobs.Extensions.WebPubSubForSocketIO",
-  "Version": "1.0.0-alpha.20241022.1",
-  "DevVersion": "1.0.0-alpha.20241022.1",
+  "Version": "1.0.0-alpha.20241023.1",
+  "DevVersion": "1.0.0-alpha.20241023.1",
   "DirectoryPath": "sdk/webpubsub/Microsoft.Azure.WebJobs.Extensions.WebPubSubForSocketIO",
   "ServiceDirectory": "webpubsub",
   "ReadMePath": "sdk/webpubsub/Microsoft.Azure.WebJobs.Extensions.WebPubSubForSocketIO/README.md",
@@ -14,8 +14,8 @@
   "IncludedForValidation": false,
   "AdditionalValidationPackages": null,
   "ArtifactDetails": {
-    "safeName": "MicrosoftAzureWebJobsExtensionsWebPubSubForSocketIO",
-    "name": "Microsoft.Azure.WebJobs.Extensions.WebPubSubForSocketIO"
+    "name": "Microsoft.Azure.WebJobs.Extensions.WebPubSubForSocketIO",
+    "safeName": "MicrosoftAzureWebJobsExtensionsWebPubSubForSocketIO"
   },
   "Namespaces": [
     "Microsoft.Azure.WebJobs.Extensions.WebPubSubForSocketIO",
