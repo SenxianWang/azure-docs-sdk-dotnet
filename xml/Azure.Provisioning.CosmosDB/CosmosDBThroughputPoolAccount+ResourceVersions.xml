@@ -19,26 +19,5 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName="V2024_02_15_preview">
-      <MemberSignature Language="C#" Value="public static readonly string V2024_02_15_preview;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly string V2024_02_15_preview" />
-      <MemberSignature Language="DocId" Value="F:Azure.Provisioning.CosmosDB.CosmosDBThroughputPoolAccount.ResourceVersions.V2024_02_15_preview" />
-      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly V2024_02_15_preview As String " />
-      <MemberSignature Language="F#" Value=" staticval mutable V2024_02_15_preview : string" Usage="Azure.Provisioning.CosmosDB.CosmosDBThroughputPoolAccount.ResourceVersions.V2024_02_15_preview" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Provisioning.CosmosDB</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            2024-02-15-preview.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
   </Members>
 </Type>

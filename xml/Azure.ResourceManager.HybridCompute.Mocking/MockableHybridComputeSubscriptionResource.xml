@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
@@ -26,6 +27,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,6 +45,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.HybridCompute.HybridComputeExtensionValueResource&gt;</ReturnType>
@@ -81,6 +84,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.HybridCompute.HybridComputeExtensionValueResource&gt;&gt;</ReturnType>
@@ -119,6 +123,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputeExtensionValueCollection</ReturnType>
@@ -141,58 +146,6 @@
           <paramref name="publisher" /> or <paramref name="extensionType" /> is an empty string, and was expected to be non-empty. </exception>
       </Docs>
     </Member>
-    <Member MemberName="GetHybridComputeGateways">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource&gt; GetHybridComputeGateways (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource&gt; GetHybridComputeGateways(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.HybridCompute.Mocking.MockableHybridComputeSubscriptionResource.GetHybridComputeGateways(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHybridComputeGateways (Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of HybridComputeGatewayResource)" />
-      <MemberSignature Language="F#" Value="abstract member GetHybridComputeGateways : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource&gt;&#xA;override this.GetHybridComputeGateways : System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource&gt;" Usage="mockableHybridComputeSubscriptionResource.GetHybridComputeGateways cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            The operation to get all gateways of a non-Azure machine
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.HybridCompute/gateways</description></item><item><term>Operation Id</term><description>Gateways_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-05-20-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource" /></description></item></list></summary>
-        <returns> A collection of <see cref="T:Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource" /> that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetHybridComputeGatewaysAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource&gt; GetHybridComputeGatewaysAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource&gt; GetHybridComputeGatewaysAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.HybridCompute.Mocking.MockableHybridComputeSubscriptionResource.GetHybridComputeGatewaysAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHybridComputeGatewaysAsync (Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of HybridComputeGatewayResource)" />
-      <MemberSignature Language="F#" Value="abstract member GetHybridComputeGatewaysAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource&gt;&#xA;override this.GetHybridComputeGatewaysAsync : System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource&gt;" Usage="mockableHybridComputeSubscriptionResource.GetHybridComputeGatewaysAsync cancellationToken" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            The operation to get all gateways of a non-Azure machine
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.HybridCompute/gateways</description></item><item><term>Operation Id</term><description>Gateways_ListBySubscription</description></item><item><term>Default Api Version</term><description>2024-05-20-preview</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource" /></description></item></list></summary>
-        <returns> An async collection of <see cref="T:Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource" /> that may take multiple service requests to iterate over. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetHybridComputeLicenses">
       <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.HybridCompute.HybridComputeLicenseResource&gt; GetHybridComputeLicenses (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.HybridCompute.HybridComputeLicenseResource&gt; GetHybridComputeLicenses(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -203,6 +156,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.HybridCompute.HybridComputeLicenseResource&gt;</ReturnType>
@@ -229,6 +183,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.HybridCompute.HybridComputeLicenseResource&gt;</ReturnType>
@@ -255,6 +210,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.HybridCompute.HybridComputeMachineResource&gt;</ReturnType>
@@ -281,6 +237,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.HybridCompute.HybridComputeMachineResource&gt;</ReturnType>
@@ -307,6 +264,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.HybridCompute.HybridComputePrivateLinkScopeResource&gt;</ReturnType>
@@ -333,6 +291,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.HybridCompute.HybridComputePrivateLinkScopeResource&gt;</ReturnType>
@@ -359,6 +318,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.HybridCompute.Models.PrivateLinkScopeValidationDetails&gt;</ReturnType>
@@ -393,6 +353,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.HybridCompute.Models.PrivateLinkScopeValidationDetails&gt;&gt;</ReturnType>
@@ -427,14 +388,15 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.HybridCompute.HybridComputeLicenseResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitUntil" Type="Azure.WaitUntil" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="data" Type="Azure.ResourceManager.HybridCompute.HybridComputeLicenseData" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="data" Type="Azure.ResourceManager.HybridCompute.HybridComputeLicenseData" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="waitUntil">
@@ -460,14 +422,15 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.ArmOperation&lt;Azure.ResourceManager.HybridCompute.HybridComputeLicenseResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitUntil" Type="Azure.WaitUntil" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="data" Type="Azure.ResourceManager.HybridCompute.HybridComputeLicenseData" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="waitUntil" Type="Azure.WaitUntil" />
+        <Parameter Name="data" Type="Azure.ResourceManager.HybridCompute.HybridComputeLicenseData" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="waitUntil">

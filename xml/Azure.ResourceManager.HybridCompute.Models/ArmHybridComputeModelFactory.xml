@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,6 +28,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.AgentConfiguration</ReturnType>
@@ -65,6 +67,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.AgentUpgrade</ReturnType>
@@ -101,6 +104,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.AvailablePatchCountByClassification</ReturnType>
@@ -141,6 +145,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.EsuKey</ReturnType>
@@ -157,38 +162,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ExtensionsResourceStatus">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.HybridCompute.Models.ExtensionsResourceStatus ExtensionsResourceStatus (string code = default, Azure.ResourceManager.HybridCompute.Models.ExtensionsStatusLevelType? level = default, string displayStatus = default, string message = default, DateTimeOffset? time = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.HybridCompute.Models.ExtensionsResourceStatus ExtensionsResourceStatus(string code, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.HybridCompute.Models.ExtensionsStatusLevelType&gt; level, string displayStatus, string message, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; time) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.HybridCompute.Models.ArmHybridComputeModelFactory.ExtensionsResourceStatus(System.String,System.Nullable{Azure.ResourceManager.HybridCompute.Models.ExtensionsStatusLevelType},System.String,System.String,System.Nullable{System.DateTimeOffset})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ExtensionsResourceStatus (Optional code As String = Nothing, Optional level As Nullable(Of ExtensionsStatusLevelType) = Nothing, Optional displayStatus As String = Nothing, Optional message As String = Nothing, Optional time As Nullable(Of DateTimeOffset) = Nothing) As ExtensionsResourceStatus" />
-      <MemberSignature Language="F#" Value="static member ExtensionsResourceStatus : string * Nullable&lt;Azure.ResourceManager.HybridCompute.Models.ExtensionsStatusLevelType&gt; * string * string * Nullable&lt;DateTimeOffset&gt; -&gt; Azure.ResourceManager.HybridCompute.Models.ExtensionsResourceStatus" Usage="Azure.ResourceManager.HybridCompute.Models.ArmHybridComputeModelFactory.ExtensionsResourceStatus (code, level, displayStatus, message, time)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.HybridCompute.Models.ExtensionsResourceStatus</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="code" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="level" Type="System.Nullable&lt;Azure.ResourceManager.HybridCompute.Models.ExtensionsStatusLevelType&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="displayStatus" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="message" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="time" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="code"> The status code. </param>
-        <param name="level"> The level code. </param>
-        <param name="displayStatus"> The short localizable label for the status. </param>
-        <param name="message"> The detailed status message, including for alerts and error messages. </param>
-        <param name="time"> The time of the status. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.HybridCompute.Models.ExtensionsResourceStatus" />. </summary>
-        <returns> A new <see cref="T:Azure.ResourceManager.HybridCompute.Models.ExtensionsResourceStatus" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="HybridComputeAccessRule">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.HybridCompute.Models.HybridComputeAccessRule HybridComputeAccessRule (string name = default, Azure.ResourceManager.HybridCompute.Models.HybridComputeAccessRuleDirection? direction = default, System.Collections.Generic.IEnumerable&lt;string&gt; addressPrefixes = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.HybridCompute.Models.HybridComputeAccessRule HybridComputeAccessRule(string name, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.HybridCompute.Models.HybridComputeAccessRuleDirection&gt; direction, class System.Collections.Generic.IEnumerable`1&lt;string&gt; addressPrefixes) cil managed" />
@@ -199,6 +172,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputeAccessRule</ReturnType>
@@ -227,6 +201,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputeConfigurationExtension</ReturnType>
@@ -253,6 +228,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputeConnectionDetail</ReturnType>
@@ -285,6 +261,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputeExtensionValueData</ReturnType>
@@ -311,50 +288,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="HybridComputeGatewayData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.HybridCompute.HybridComputeGatewayData HybridComputeGatewayData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.HybridCompute.Models.HybridComputeProvisioningState? provisioningState = default, string gatewayId = default, Azure.ResourceManager.HybridCompute.Models.HybridComputeGatewayType? gatewayType = default, string gatewayEndpoint = default, System.Collections.Generic.IEnumerable&lt;string&gt; allowedFeatures = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.HybridCompute.HybridComputeGatewayData HybridComputeGatewayData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.HybridCompute.Models.HybridComputeProvisioningState&gt; provisioningState, string gatewayId, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.HybridCompute.Models.HybridComputeGatewayType&gt; gatewayType, string gatewayEndpoint, class System.Collections.Generic.IEnumerable`1&lt;string&gt; allowedFeatures) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.HybridCompute.Models.ArmHybridComputeModelFactory.HybridComputeGatewayData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,System.Nullable{Azure.ResourceManager.HybridCompute.Models.HybridComputeProvisioningState},System.String,System.Nullable{Azure.ResourceManager.HybridCompute.Models.HybridComputeGatewayType},System.String,System.Collections.Generic.IEnumerable{System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function HybridComputeGatewayData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional provisioningState As Nullable(Of HybridComputeProvisioningState) = Nothing, Optional gatewayId As String = Nothing, Optional gatewayType As Nullable(Of HybridComputeGatewayType) = Nothing, Optional gatewayEndpoint As String = Nothing, Optional allowedFeatures As IEnumerable(Of String) = Nothing) As HybridComputeGatewayData" />
-      <MemberSignature Language="F#" Value="static member HybridComputeGatewayData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Nullable&lt;Azure.ResourceManager.HybridCompute.Models.HybridComputeProvisioningState&gt; * string * Nullable&lt;Azure.ResourceManager.HybridCompute.Models.HybridComputeGatewayType&gt; * string * seq&lt;string&gt; -&gt; Azure.ResourceManager.HybridCompute.HybridComputeGatewayData" Usage="Azure.ResourceManager.HybridCompute.Models.ArmHybridComputeModelFactory.HybridComputeGatewayData (id, name, resourceType, systemData, tags, location, provisioningState, gatewayId, gatewayType, gatewayEndpoint, allowedFeatures)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputeGatewayData</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="5" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.HybridCompute.Models.HybridComputeProvisioningState&gt;" Index="6" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="gatewayId" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="gatewayType" Type="System.Nullable&lt;Azure.ResourceManager.HybridCompute.Models.HybridComputeGatewayType&gt;" Index="8" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="gatewayEndpoint" Type="System.String" Index="9" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="allowedFeatures" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="10" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="tags"> The tags. </param>
-        <param name="location"> The location. </param>
-        <param name="provisioningState"> The provisioning state, which only appears in the response. </param>
-        <param name="gatewayId"> A unique, immutable, identifier for the Gateway. </param>
-        <param name="gatewayType"> The type of the Gateway resource. </param>
-        <param name="gatewayEndpoint"> The endpoint fqdn for the Gateway. </param>
-        <param name="allowedFeatures"> Specifies the list of features that are enabled for this Gateway. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.HybridCompute.HybridComputeGatewayData" />. </summary>
-        <returns> A new <see cref="T:Azure.ResourceManager.HybridCompute.HybridComputeGatewayData" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="HybridComputeIPAddress">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.HybridCompute.Models.HybridComputeIPAddress HybridComputeIPAddress (string address = default, string ipAddressVersion = default, string subnetAddressPrefix = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.HybridCompute.Models.HybridComputeIPAddress HybridComputeIPAddress(string address, string ipAddressVersion, string subnetAddressPrefix) cil managed" />
@@ -365,6 +298,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputeIPAddress</ReturnType>
@@ -393,6 +327,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputeLicenseData</ReturnType>
@@ -435,6 +370,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputeLicenseDetails</ReturnType>
@@ -473,33 +409,34 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputeLicenseProfileData</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="5" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.HybridCompute.Models.HybridComputeProvisioningState&gt;" Index="6" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="subscriptionStatus" Type="System.Nullable&lt;Azure.ResourceManager.HybridCompute.Models.LicenseProfileSubscriptionStatus&gt;" Index="7" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="productType" Type="System.Nullable&lt;Azure.ResourceManager.HybridCompute.Models.LicenseProfileProductType&gt;" Index="8" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="enrollmentOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="9" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="billingStartOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="10" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="disenrollmentOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="11" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="billingEndOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="12" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="error" Type="Azure.ResponseError" Index="13" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="productFeatures" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.HybridCompute.Models.HybridComputeProductFeature&gt;" Index="14" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="assignedLicenseImmutableId" Type="System.Nullable&lt;System.Guid&gt;" Index="15" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="esuKeys" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.HybridCompute.Models.EsuKey&gt;" Index="16" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="serverType" Type="System.Nullable&lt;Azure.ResourceManager.HybridCompute.Models.EsuServerType&gt;" Index="17" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="esuEligibility" Type="System.Nullable&lt;Azure.ResourceManager.HybridCompute.Models.EsuEligibility&gt;" Index="18" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="esuKeyState" Type="System.Nullable&lt;Azure.ResourceManager.HybridCompute.Models.EsuKeyState&gt;" Index="19" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="assignedLicense" Type="System.String" Index="20" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="softwareAssuranceCustomer" Type="System.Nullable&lt;System.Boolean&gt;" Index="21" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" />
+        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="location" Type="Azure.Core.AzureLocation" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Azure.ResourceManager.HybridCompute.Models.HybridComputeProvisioningState&gt;" />
+        <Parameter Name="subscriptionStatus" Type="System.Nullable&lt;Azure.ResourceManager.HybridCompute.Models.LicenseProfileSubscriptionStatus&gt;" />
+        <Parameter Name="productType" Type="System.Nullable&lt;Azure.ResourceManager.HybridCompute.Models.LicenseProfileProductType&gt;" />
+        <Parameter Name="enrollmentOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="billingStartOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="disenrollmentOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="billingEndOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
+        <Parameter Name="error" Type="Azure.ResponseError" />
+        <Parameter Name="productFeatures" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.HybridCompute.Models.HybridComputeProductFeature&gt;" />
+        <Parameter Name="assignedLicenseImmutableId" Type="System.Nullable&lt;System.Guid&gt;" />
+        <Parameter Name="esuKeys" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.HybridCompute.Models.EsuKey&gt;" />
+        <Parameter Name="serverType" Type="System.Nullable&lt;Azure.ResourceManager.HybridCompute.Models.EsuServerType&gt;" />
+        <Parameter Name="esuEligibility" Type="System.Nullable&lt;Azure.ResourceManager.HybridCompute.Models.EsuEligibility&gt;" />
+        <Parameter Name="esuKeyState" Type="System.Nullable&lt;Azure.ResourceManager.HybridCompute.Models.EsuKeyState&gt;" />
+        <Parameter Name="assignedLicense" Type="System.String" />
+        <Parameter Name="softwareAssuranceCustomer" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
         <param name="id"> The id. </param>
@@ -539,6 +476,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputeLinuxConfiguration</ReturnType>
@@ -569,6 +507,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputeMachineData</ReturnType>
@@ -671,6 +610,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputeMachineExtensionData</ReturnType>
@@ -707,6 +647,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputeNetworkInterface</ReturnType>
@@ -731,6 +672,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputeNetworkProfile</ReturnType>
@@ -755,6 +697,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputeOSProfile</ReturnType>
@@ -783,6 +726,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputePatchSettingsStatus</ReturnType>
@@ -809,6 +753,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputePrivateEndpointConnectionData</ReturnType>
@@ -841,6 +786,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputePrivateEndpointConnectionProperties</ReturnType>
@@ -871,6 +817,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputePrivateLinkResourceData</ReturnType>
@@ -903,6 +850,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputePrivateLinkResourceProperties</ReturnType>
@@ -931,6 +879,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputePrivateLinkScopeData</ReturnType>
@@ -967,6 +916,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputePrivateLinkScopeProperties</ReturnType>
@@ -997,6 +947,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputePrivateLinkServiceConnectionStateProperty</ReturnType>
@@ -1025,6 +976,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputeProductFeature</ReturnType>
@@ -1061,6 +1013,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputeProvisioningIssue</ReturnType>
@@ -1095,6 +1048,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputeResourceAssociation</ReturnType>
@@ -1111,40 +1065,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="HybridComputeTargetResourceSettings">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.HybridCompute.Models.HybridComputeTargetResourceSettings HybridComputeTargetResourceSettings (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, Guid? tenantId = default, Azure.Core.ResourceIdentifier gatewayResourceId = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.HybridCompute.Models.HybridComputeTargetResourceSettings HybridComputeTargetResourceSettings(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; tenantId, class Azure.Core.ResourceIdentifier gatewayResourceId) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.HybridCompute.Models.ArmHybridComputeModelFactory.HybridComputeTargetResourceSettings(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Nullable{System.Guid},Azure.Core.ResourceIdentifier)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function HybridComputeTargetResourceSettings (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tenantId As Nullable(Of Guid) = Nothing, Optional gatewayResourceId As ResourceIdentifier = Nothing) As HybridComputeTargetResourceSettings" />
-      <MemberSignature Language="F#" Value="static member HybridComputeTargetResourceSettings : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * Nullable&lt;Guid&gt; * Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.HybridCompute.Models.HybridComputeTargetResourceSettings" Usage="Azure.ResourceManager.HybridCompute.Models.ArmHybridComputeModelFactory.HybridComputeTargetResourceSettings (id, name, resourceType, systemData, tenantId, gatewayResourceId)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputeTargetResourceSettings</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="tenantId" Type="System.Nullable&lt;System.Guid&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="gatewayResourceId" Type="Azure.Core.ResourceIdentifier" Index="5" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="tenantId"> Azure resource tenant Id. </param>
-        <param name="gatewayResourceId"> Associated Gateway Resource Id. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.HybridCompute.Models.HybridComputeTargetResourceSettings" />. </summary>
-        <returns> A new <see cref="T:Azure.ResourceManager.HybridCompute.Models.HybridComputeTargetResourceSettings" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="HybridComputeWindowsConfiguration">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.HybridCompute.Models.HybridComputeWindowsConfiguration HybridComputeWindowsConfiguration (Azure.ResourceManager.HybridCompute.Models.AssessmentModeType? assessmentMode = default, Azure.ResourceManager.HybridCompute.Models.PatchModeType? patchMode = default, bool? isHotpatchingEnabled = default, Azure.ResourceManager.HybridCompute.Models.HybridComputePatchSettingsStatus status = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.HybridCompute.Models.HybridComputeWindowsConfiguration HybridComputeWindowsConfiguration(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.HybridCompute.Models.AssessmentModeType&gt; assessmentMode, valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.HybridCompute.Models.PatchModeType&gt; patchMode, valuetype System.Nullable`1&lt;bool&gt; isHotpatchingEnabled, class Azure.ResourceManager.HybridCompute.Models.HybridComputePatchSettingsStatus status) cil managed" />
@@ -1155,6 +1075,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.HybridComputeWindowsConfiguration</ReturnType>
@@ -1185,6 +1106,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.LicenseProfileArmEsuPropertiesWithoutAssignedLicense</ReturnType>
@@ -1217,6 +1139,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.LicenseProfileMachineInstanceView</ReturnType>
@@ -1263,6 +1186,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.LicenseProfileMachineInstanceViewEsuProperties</ReturnType>
@@ -1299,6 +1223,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.LicenseProfileStorageModelEsuProperties</ReturnType>
@@ -1325,6 +1250,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.MachineAssessPatchesResult</ReturnType>
@@ -1367,6 +1293,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.MachineExtensionProperties</ReturnType>
@@ -1409,6 +1336,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.MachineInstallPatchesContent</ReturnType>
@@ -1439,6 +1367,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.MachineInstallPatchesResult</ReturnType>
@@ -1481,104 +1410,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="MachineRunCommandData">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.HybridCompute.MachineRunCommandData MachineRunCommandData (Azure.Core.ResourceIdentifier id = default, string name = default, Azure.Core.ResourceType resourceType = default, Azure.ResourceManager.Models.SystemData systemData = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Azure.Core.AzureLocation location = default, Azure.ResourceManager.HybridCompute.Models.MachineRunCommandScriptSource source = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.HybridCompute.Models.RunCommandInputParameter&gt; parameters = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.HybridCompute.Models.RunCommandInputParameter&gt; protectedParameters = default, bool? asyncExecution = default, string runAsUser = default, string runAsPassword = default, int? timeoutInSeconds = default, Uri outputBlobUri = default, Uri errorBlobUri = default, Azure.ResourceManager.HybridCompute.Models.RunCommandManagedIdentity outputBlobManagedIdentity = default, Azure.ResourceManager.HybridCompute.Models.RunCommandManagedIdentity errorBlobManagedIdentity = default, string provisioningState = default, Azure.ResourceManager.HybridCompute.Models.MachineRunCommandInstanceView instanceView = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.HybridCompute.MachineRunCommandData MachineRunCommandData(class Azure.Core.ResourceIdentifier id, string name, valuetype Azure.Core.ResourceType resourceType, class Azure.ResourceManager.Models.SystemData systemData, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype Azure.Core.AzureLocation location, class Azure.ResourceManager.HybridCompute.Models.MachineRunCommandScriptSource source, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.HybridCompute.Models.RunCommandInputParameter&gt; parameters, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.HybridCompute.Models.RunCommandInputParameter&gt; protectedParameters, valuetype System.Nullable`1&lt;bool&gt; asyncExecution, string runAsUser, string runAsPassword, valuetype System.Nullable`1&lt;int32&gt; timeoutInSeconds, class System.Uri outputBlobUri, class System.Uri errorBlobUri, class Azure.ResourceManager.HybridCompute.Models.RunCommandManagedIdentity outputBlobManagedIdentity, class Azure.ResourceManager.HybridCompute.Models.RunCommandManagedIdentity errorBlobManagedIdentity, string provisioningState, class Azure.ResourceManager.HybridCompute.Models.MachineRunCommandInstanceView instanceView) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.HybridCompute.Models.ArmHybridComputeModelFactory.MachineRunCommandData(Azure.Core.ResourceIdentifier,System.String,Azure.Core.ResourceType,Azure.ResourceManager.Models.SystemData,System.Collections.Generic.IDictionary{System.String,System.String},Azure.Core.AzureLocation,Azure.ResourceManager.HybridCompute.Models.MachineRunCommandScriptSource,System.Collections.Generic.IEnumerable{Azure.ResourceManager.HybridCompute.Models.RunCommandInputParameter},System.Collections.Generic.IEnumerable{Azure.ResourceManager.HybridCompute.Models.RunCommandInputParameter},System.Nullable{System.Boolean},System.String,System.String,System.Nullable{System.Int32},System.Uri,System.Uri,Azure.ResourceManager.HybridCompute.Models.RunCommandManagedIdentity,Azure.ResourceManager.HybridCompute.Models.RunCommandManagedIdentity,System.String,Azure.ResourceManager.HybridCompute.Models.MachineRunCommandInstanceView)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function MachineRunCommandData (Optional id As ResourceIdentifier = Nothing, Optional name As String = Nothing, Optional resourceType As ResourceType = Nothing, Optional systemData As SystemData = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As AzureLocation = Nothing, Optional source As MachineRunCommandScriptSource = Nothing, Optional parameters As IEnumerable(Of RunCommandInputParameter) = Nothing, Optional protectedParameters As IEnumerable(Of RunCommandInputParameter) = Nothing, Optional asyncExecution As Nullable(Of Boolean) = Nothing, Optional runAsUser As String = Nothing, Optional runAsPassword As String = Nothing, Optional timeoutInSeconds As Nullable(Of Integer) = Nothing, Optional outputBlobUri As Uri = Nothing, Optional errorBlobUri As Uri = Nothing, Optional outputBlobManagedIdentity As RunCommandManagedIdentity = Nothing, Optional errorBlobManagedIdentity As RunCommandManagedIdentity = Nothing, Optional provisioningState As String = Nothing, Optional instanceView As MachineRunCommandInstanceView = Nothing) As MachineRunCommandData" />
-      <MemberSignature Language="F#" Value="static member MachineRunCommandData : Azure.Core.ResourceIdentifier * string * Azure.Core.ResourceType * Azure.ResourceManager.Models.SystemData * System.Collections.Generic.IDictionary&lt;string, string&gt; * Azure.Core.AzureLocation * Azure.ResourceManager.HybridCompute.Models.MachineRunCommandScriptSource * seq&lt;Azure.ResourceManager.HybridCompute.Models.RunCommandInputParameter&gt; * seq&lt;Azure.ResourceManager.HybridCompute.Models.RunCommandInputParameter&gt; * Nullable&lt;bool&gt; * string * string * Nullable&lt;int&gt; * Uri * Uri * Azure.ResourceManager.HybridCompute.Models.RunCommandManagedIdentity * Azure.ResourceManager.HybridCompute.Models.RunCommandManagedIdentity * string * Azure.ResourceManager.HybridCompute.Models.MachineRunCommandInstanceView -&gt; Azure.ResourceManager.HybridCompute.MachineRunCommandData" Usage="Azure.ResourceManager.HybridCompute.Models.ArmHybridComputeModelFactory.MachineRunCommandData (id, name, resourceType, systemData, tags, location, source, parameters, protectedParameters, asyncExecution, runAsUser, runAsPassword, timeoutInSeconds, outputBlobUri, errorBlobUri, outputBlobManagedIdentity, errorBlobManagedIdentity, provisioningState, instanceView)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.HybridCompute.MachineRunCommandData</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="resourceType" Type="Azure.Core.ResourceType" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="systemData" Type="Azure.ResourceManager.Models.SystemData" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="location" Type="Azure.Core.AzureLocation" Index="5" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="source" Type="Azure.ResourceManager.HybridCompute.Models.MachineRunCommandScriptSource" Index="6" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="parameters" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.HybridCompute.Models.RunCommandInputParameter&gt;" Index="7" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="protectedParameters" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.HybridCompute.Models.RunCommandInputParameter&gt;" Index="8" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="asyncExecution" Type="System.Nullable&lt;System.Boolean&gt;" Index="9" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="runAsUser" Type="System.String" Index="10" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="runAsPassword" Type="System.String" Index="11" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="timeoutInSeconds" Type="System.Nullable&lt;System.Int32&gt;" Index="12" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="outputBlobUri" Type="System.Uri" Index="13" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="errorBlobUri" Type="System.Uri" Index="14" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="outputBlobManagedIdentity" Type="Azure.ResourceManager.HybridCompute.Models.RunCommandManagedIdentity" Index="15" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="errorBlobManagedIdentity" Type="Azure.ResourceManager.HybridCompute.Models.RunCommandManagedIdentity" Index="16" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="provisioningState" Type="System.String" Index="17" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="instanceView" Type="Azure.ResourceManager.HybridCompute.Models.MachineRunCommandInstanceView" Index="18" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="id"> The id. </param>
-        <param name="name"> The name. </param>
-        <param name="resourceType"> The resourceType. </param>
-        <param name="systemData"> The systemData. </param>
-        <param name="tags"> The tags. </param>
-        <param name="location"> The location. </param>
-        <param name="source"> The source of the run command script. </param>
-        <param name="parameters"> The parameters used by the script. </param>
-        <param name="protectedParameters"> The parameters used by the script. </param>
-        <param name="asyncExecution"> Optional. If set to true, provisioning will complete as soon as script starts and will not wait for script to complete. </param>
-        <param name="runAsUser"> Specifies the user account on the machine when executing the run command. </param>
-        <param name="runAsPassword"> Specifies the user account password on the machine when executing the run command. </param>
-        <param name="timeoutInSeconds"> The timeout in seconds to execute the run command. </param>
-        <param name="outputBlobUri"> Specifies the Azure storage blob where script output stream will be uploaded. Use a SAS URI with read, append, create, write access OR use managed identity to provide the VM access to the blob. Refer outputBlobManagedIdentity parameter. </param>
-        <param name="errorBlobUri"> Specifies the Azure storage blob where script error stream will be uploaded. Use a SAS URI with read, append, create, write access OR use managed identity to provide the VM access to the blob. Refer errorBlobManagedIdentity parameter. </param>
-        <param name="outputBlobManagedIdentity"> User-assigned managed identity that has access to outputBlobUri storage blob. Use an empty object in case of system-assigned identity. Make sure managed identity has been given access to blob's container with 'Storage Blob Data Contributor' role assignment. In case of user-assigned identity, make sure you add it under VM's identity. For more info on managed identity and Run Command, refer https://aka.ms/ManagedIdentity and https://aka.ms/RunCommandManaged. </param>
-        <param name="errorBlobManagedIdentity"> User-assigned managed identity that has access to errorBlobUri storage blob. Use an empty object in case of system-assigned identity. Make sure managed identity has been given access to blob's container with 'Storage Blob Data Contributor' role assignment. In case of user-assigned identity, make sure you add it under VM's identity. For more info on managed identity and Run Command, refer https://aka.ms/ManagedIdentity and https://aka.ms/RunCommandManaged. </param>
-        <param name="provisioningState"> The provisioning state, which only appears in the response. </param>
-        <param name="instanceView"> The machine run command instance view. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.HybridCompute.MachineRunCommandData" />. </summary>
-        <returns> A new <see cref="T:Azure.ResourceManager.HybridCompute.MachineRunCommandData" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MachineRunCommandInstanceView">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.HybridCompute.Models.MachineRunCommandInstanceView MachineRunCommandInstanceView (Azure.ResourceManager.HybridCompute.Models.HybridComputeExecutionState? executionState = default, string executionMessage = default, int? exitCode = default, string output = default, string error = default, DateTimeOffset? startOn = default, DateTimeOffset? endOn = default, System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.HybridCompute.Models.ExtensionsResourceStatus&gt; statuses = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.HybridCompute.Models.MachineRunCommandInstanceView MachineRunCommandInstanceView(valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.HybridCompute.Models.HybridComputeExecutionState&gt; executionState, string executionMessage, valuetype System.Nullable`1&lt;int32&gt; exitCode, string output, string error, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startOn, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endOn, class System.Collections.Generic.IEnumerable`1&lt;class Azure.ResourceManager.HybridCompute.Models.ExtensionsResourceStatus&gt; statuses) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.HybridCompute.Models.ArmHybridComputeModelFactory.MachineRunCommandInstanceView(System.Nullable{Azure.ResourceManager.HybridCompute.Models.HybridComputeExecutionState},System.String,System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Collections.Generic.IEnumerable{Azure.ResourceManager.HybridCompute.Models.ExtensionsResourceStatus})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function MachineRunCommandInstanceView (Optional executionState As Nullable(Of HybridComputeExecutionState) = Nothing, Optional executionMessage As String = Nothing, Optional exitCode As Nullable(Of Integer) = Nothing, Optional output As String = Nothing, Optional error As String = Nothing, Optional startOn As Nullable(Of DateTimeOffset) = Nothing, Optional endOn As Nullable(Of DateTimeOffset) = Nothing, Optional statuses As IEnumerable(Of ExtensionsResourceStatus) = Nothing) As MachineRunCommandInstanceView" />
-      <MemberSignature Language="F#" Value="static member MachineRunCommandInstanceView : Nullable&lt;Azure.ResourceManager.HybridCompute.Models.HybridComputeExecutionState&gt; * string * Nullable&lt;int&gt; * string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * seq&lt;Azure.ResourceManager.HybridCompute.Models.ExtensionsResourceStatus&gt; -&gt; Azure.ResourceManager.HybridCompute.Models.MachineRunCommandInstanceView" Usage="Azure.ResourceManager.HybridCompute.Models.ArmHybridComputeModelFactory.MachineRunCommandInstanceView (executionState, executionMessage, exitCode, output, error, startOn, endOn, statuses)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.HybridCompute.Models.MachineRunCommandInstanceView</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="executionState" Type="System.Nullable&lt;Azure.ResourceManager.HybridCompute.Models.HybridComputeExecutionState&gt;" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="executionMessage" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="exitCode" Type="System.Nullable&lt;System.Int32&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="output" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="error" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="startOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="5" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="endOn" Type="System.Nullable&lt;System.DateTimeOffset&gt;" Index="6" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="statuses" Type="System.Collections.Generic.IEnumerable&lt;Azure.ResourceManager.HybridCompute.Models.ExtensionsResourceStatus&gt;" Index="7" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="executionState"> Script execution status. </param>
-        <param name="executionMessage"> Communicate script configuration errors or execution messages. </param>
-        <param name="exitCode"> Exit code returned from script execution. </param>
-        <param name="output"> Script output stream. </param>
-        <param name="error"> Script error stream. </param>
-        <param name="startOn"> Script start time. </param>
-        <param name="endOn"> Script end time. </param>
-        <param name="statuses"> The  status information. </param>
-        <summary> Initializes a new instance of <see cref="T:Azure.ResourceManager.HybridCompute.Models.MachineRunCommandInstanceView" />. </summary>
-        <returns> A new <see cref="T:Azure.ResourceManager.HybridCompute.Models.MachineRunCommandInstanceView" /> instance for mocking. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="NetworkSecurityPerimeter">
       <MemberSignature Language="C#" Value="public static Azure.ResourceManager.HybridCompute.Models.NetworkSecurityPerimeter NetworkSecurityPerimeter (string id = default, string perimeterGuid = default, Azure.Core.AzureLocation? location = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.ResourceManager.HybridCompute.Models.NetworkSecurityPerimeter NetworkSecurityPerimeter(string id, string perimeterGuid, valuetype System.Nullable`1&lt;valuetype Azure.Core.AzureLocation&gt; location) cil managed" />
@@ -1589,6 +1420,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.NetworkSecurityPerimeter</ReturnType>
@@ -1617,6 +1449,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.NetworkSecurityPerimeterConfigurationData</ReturnType>
@@ -1657,12 +1490,13 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.NetworkSecurityPerimeterConfigurationReconcileResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location" Type="System.Nullable&lt;Azure.Core.AzureLocation&gt;" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="location" Type="System.Nullable&lt;Azure.Core.AzureLocation&gt;" />
       </Parameters>
       <Docs>
         <param name="location"> The URL of the resource used to check the status of the asynchronous operation. </param>
@@ -1681,6 +1515,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.NetworkSecurityPerimeterProfile</ReturnType>
@@ -1713,6 +1548,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.PrivateEndpointConnectionDataModel</ReturnType>
@@ -1745,6 +1581,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.Models.PrivateLinkScopeValidationDetails</ReturnType>
