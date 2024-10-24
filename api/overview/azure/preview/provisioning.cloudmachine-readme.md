@@ -6,7 +6,7 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: provisioning
 ---
-# Azure Provisioning client library for .NET - version 1.0.0-alpha.20241023.2 
+# Azure Provisioning client library for .NET - version 1.0.0-alpha.20241024.2 
 
 
 Azure.Provisioning.CloudMachine simplifies declarative resource provisioning in .NET for CloudMachine resources.
