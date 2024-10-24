@@ -1,9 +1,9 @@
 <Type Name="BlobService" FullName="Azure.Provisioning.Storage.BlobService">
-  <TypeSignature Language="C#" Value="public class BlobService : Azure.Provisioning.Primitives.Resource, Azure.Provisioning.Primitives.IClientCreator&lt;Azure.Storage.Blobs.BlobServiceClient,Azure.Storage.Blobs.BlobClientOptions&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlobService extends Azure.Provisioning.Primitives.Resource implements class Azure.Provisioning.Primitives.IClientCreator, class Azure.Provisioning.Primitives.IClientCreator`2&lt;class Azure.Storage.Blobs.BlobServiceClient, class Azure.Storage.Blobs.BlobClientOptions&gt;" />
+  <TypeSignature Language="C#" Value="public class BlobService : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlobService extends Azure.Provisioning.Primitives.ProvisionableResource" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Storage.BlobService" />
-  <TypeSignature Language="VB.NET" Value="Public Class BlobService&#xA;Inherits Resource&#xA;Implements IClientCreator(Of BlobServiceClient, BlobClientOptions)" />
-  <TypeSignature Language="F#" Value="type BlobService = class&#xA;    inherit Resource&#xA;    interface IClientCreator&lt;BlobServiceClient, BlobClientOptions&gt;&#xA;    interface IClientCreator" />
+  <TypeSignature Language="VB.NET" Value="Public Class BlobService&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type BlobService = class&#xA;    inherit ProvisionableResource" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning</AssemblyName>
     <AssemblyVersion>0.1.0.0</AssemblyVersion>
@@ -15,15 +15,9 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.Resource</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
-      <InterfaceName>Azure.Provisioning.Primitives.IClientCreator</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>Azure.Provisioning.Primitives.IClientCreator&lt;Azure.Storage.Blobs.BlobServiceClient,Azure.Storage.Blobs.BlobClientOptions&gt;</InterfaceName>
-    </Interface>
   </Interfaces>
   <Docs>
     <summary>
@@ -33,22 +27,22 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BlobService (string identifierName, string? resourceVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identifierName, string resourceVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public BlobService (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Storage.BlobService.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (identifierName As String, Optional resourceVersion As String = Nothing)" />
-      <MemberSignature Language="F#" Value="new Azure.Provisioning.Storage.BlobService : string * string -&gt; Azure.Provisioning.Storage.BlobService" Usage="new Azure.Provisioning.Storage.BlobService (identifierName, resourceVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.Storage.BlobService : string * string -&gt; Azure.Provisioning.Storage.BlobService" Usage="new Azure.Provisioning.Storage.BlobService (bicepIdentifier, resourceVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="identifierName" Type="System.String" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
         <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifierName">
+        <param name="bicepIdentifier">
             The the Bicep identifier name of the BlobService resource.  This can be
             used to refer to the resource in expressions, but is not the Azure
             name of the resource.  This value can contain letters, numbers, and
@@ -58,80 +52,6 @@
         <summary>
             Creates a new BlobService.
             </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Azure.Provisioning.Primitives.IClientCreator.GetOutputs">
-      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerable&lt;Azure.Provisioning.ProvisioningOutput&gt; IClientCreator.GetOutputs ();" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Azure.Provisioning.ProvisioningOutput&gt; Azure.Provisioning.Primitives.IClientCreator.GetOutputs() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Storage.BlobService.Azure#Provisioning#Primitives#IClientCreator#GetOutputs" />
-      <MemberSignature Language="VB.NET" Value=" Iterator Overridable NotOverridable Function GetOutputs () As IEnumerable(Of ProvisioningOutput) Implements IClientCreator.GetOutputs" />
-      <MemberSignature Language="F#" Value="abstract member Azure.Provisioning.Primitives.IClientCreator.GetOutputs : unit -&gt; seq&lt;Azure.Provisioning.ProvisioningOutput&gt;&#xA;override this.Azure.Provisioning.Primitives.IClientCreator.GetOutputs : unit -&gt; seq&lt;Azure.Provisioning.ProvisioningOutput&gt;" Usage="blobService.Azure.Provisioning.Primitives.IClientCreator.GetOutputs " />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Azure.Provisioning.Primitives.IClientCreator.GetOutputs</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Azure.Provisioning.Storage.BlobService+&lt;Azure-Provisioning-Primitives-IClientCreator-GetOutputs&gt;d__0))]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Azure.Provisioning.Storage.BlobService+&lt;Azure-Provisioning-Primitives-IClientCreator-GetOutputs&gt;d__0))&gt;]</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IEnumerable&lt;Azure.Provisioning.ProvisioningOutput&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Get the outputs required to construct a client for this resource.
-            </summary>
-        <returns>
-            The outputs required to construct a client for this resource.
-            </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Azure.Provisioning.Primitives.IClientCreator&lt;Azure.Storage.Blobs.BlobServiceClient,Azure.Storage.Blobs.BlobClientOptions&gt;.CreateClient">
-      <MemberSignature Language="C#" Value="Azure.Storage.Blobs.BlobServiceClient IClientCreator&lt;BlobServiceClient,BlobClientOptions&gt;.CreateClient (System.Collections.Generic.IReadOnlyDictionary&lt;string,object?&gt; deploymentOutputs, Azure.Core.TokenCredential credential, Azure.Storage.Blobs.BlobClientOptions? options);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Azure.Storage.Blobs.BlobServiceClient Azure.Provisioning.Primitives.IClientCreator&lt;Azure.Storage.Blobs.BlobServiceClient,Azure.Storage.Blobs.BlobClientOptions&gt;.CreateClient(class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, object&gt; deploymentOutputs, class Azure.Core.TokenCredential credential, class Azure.Storage.Blobs.BlobClientOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Storage.BlobService.Azure#Provisioning#Primitives#IClientCreator&lt;Azure#Storage#Blobs#BlobServiceClient,Azure#Storage#Blobs#BlobClientOptions&gt;#CreateClient(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)" />
-      <MemberSignature Language="VB.NET" Value="Function CreateClient (deploymentOutputs As IReadOnlyDictionary(Of String, Object), credential As TokenCredential, options As BlobClientOptions) As BlobServiceClient Implements IClientCreator(Of BlobServiceClient, BlobClientOptions).CreateClient" />
-      <MemberSignature Language="F#" Value="abstract member Azure.Provisioning.Primitives.IClientCreator&lt;Azure.Storage.Blobs.BlobServiceClient,Azure.Storage.Blobs.BlobClientOptions&gt;.CreateClient : System.Collections.Generic.IReadOnlyDictionary&lt;string, obj&gt; * Azure.Core.TokenCredential * Azure.Storage.Blobs.BlobClientOptions -&gt; Azure.Storage.Blobs.BlobServiceClient&#xA;override this.Azure.Provisioning.Primitives.IClientCreator&lt;Azure.Storage.Blobs.BlobServiceClient,Azure.Storage.Blobs.BlobClientOptions&gt;.CreateClient : System.Collections.Generic.IReadOnlyDictionary&lt;string, obj&gt; * Azure.Core.TokenCredential * Azure.Storage.Blobs.BlobClientOptions -&gt; Azure.Storage.Blobs.BlobServiceClient" Usage="blobService.Azure.Provisioning.Primitives.IClientCreator&lt;Azure.Storage.Blobs.BlobServiceClient,Azure.Storage.Blobs.BlobClientOptions&gt;.CreateClient (deploymentOutputs, credential, options)" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Azure.Provisioning.Primitives.IClientCreator`2.CreateClient(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},Azure.Core.TokenCredential,`1)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Storage.Blobs.BlobServiceClient</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="deploymentOutputs" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.Object&gt;" />
-        <Parameter Name="credential" Type="Azure.Core.TokenCredential" />
-        <Parameter Name="options" Type="Azure.Storage.Blobs.BlobClientOptions" />
-      </Parameters>
-      <Docs>
-        <param name="deploymentOutputs">The deployment outputs.</param>
-        <param name="credential">A credential to use for creating the client.</param>
-        <param name="options">
-            Optional <see cref="T:Azure.Storage.Blobs.BlobClientOptions" /> to use for configuring the
-            <see cref="T:Azure.Storage.Blobs.BlobServiceClient" />.
-            </param>
-        <summary>
-            Create a <see cref="T:Azure.Storage.Blobs.BlobServiceClient" /> after deploying a
-            <see cref="T:Azure.Provisioning.Storage.BlobService" /> resource.
-            </summary>
-        <returns>
-            A <see cref="T:Azure.Storage.Blobs.BlobServiceClient" /> client for the provisioned
-            <see cref="T:Azure.Provisioning.Storage.BlobService" /> resource.
-            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,11 +170,11 @@
       </Docs>
     </Member>
     <Member MemberName="FromExisting">
-      <MemberSignature Language="C#" Value="public static Azure.Provisioning.Storage.BlobService FromExisting (string identifierName, string? resourceVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.Storage.BlobService FromExisting(string identifierName, string resourceVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.Storage.BlobService FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.Storage.BlobService FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Storage.BlobService.FromExisting(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (identifierName As String, Optional resourceVersion As String = Nothing) As BlobService" />
-      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.Storage.BlobService" Usage="Azure.Provisioning.Storage.BlobService.FromExisting (identifierName, resourceVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As BlobService" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.Storage.BlobService" Usage="Azure.Provisioning.Storage.BlobService.FromExisting (bicepIdentifier, resourceVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.Storage</AssemblyName>
@@ -264,11 +184,11 @@
         <ReturnType>Azure.Provisioning.Storage.BlobService</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="identifierName" Type="System.String" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
         <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifierName">
+        <param name="bicepIdentifier">
             The the Bicep identifier name of the BlobService resource.  This can be
             used to refer to the resource in expressions, but is not the Azure
             name of the resource.  This value can contain letters, numbers, and

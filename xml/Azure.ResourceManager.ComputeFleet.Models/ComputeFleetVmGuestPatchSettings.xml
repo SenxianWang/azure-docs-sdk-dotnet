@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -36,6 +37,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -53,6 +55,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.ComputeFleet.Models.ComputeFleetWindowsPatchAssessmentMode&gt;</ReturnType>
@@ -79,6 +82,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ComputeFleet.Models.ComputeFleetWindowsVmGuestPatchAutomaticByPlatformSettings</ReturnType>
@@ -102,6 +106,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -116,6 +121,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="JsonModelWriteCore">
+      <MemberSignature Language="C#" Value="protected virtual void JsonModelWriteCore (System.Text.Json.Utf8JsonWriter writer, System.ClientModel.Primitives.ModelReaderWriterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void JsonModelWriteCore(class System.Text.Json.Utf8JsonWriter writer, class System.ClientModel.Primitives.ModelReaderWriterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmGuestPatchSettings.JsonModelWriteCore(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub JsonModelWriteCore (writer As Utf8JsonWriter, options As ModelReaderWriterOptions)" />
+      <MemberSignature Language="F#" Value="abstract member JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit&#xA;override this.JsonModelWriteCore : System.Text.Json.Utf8JsonWriter * System.ClientModel.Primitives.ModelReaderWriterOptions -&gt; unit" Usage="computeFleetVmGuestPatchSettings.JsonModelWriteCore (writer, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+        <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="writer"> The JSON writer. </param>
+        <param name="options"> The client options for reading and writing models. </param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PatchMode">
       <MemberSignature Language="C#" Value="public Azure.ResourceManager.ComputeFleet.Models.ComputeFleetWindowsVmGuestPatchMode? PatchMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Azure.ResourceManager.ComputeFleet.Models.ComputeFleetWindowsVmGuestPatchMode&gt; PatchMode" />
@@ -126,6 +157,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.ComputeFleet.Models.ComputeFleetWindowsVmGuestPatchMode&gt;</ReturnType>
@@ -161,6 +193,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmGuestPatchSettings</ReturnType>
@@ -193,6 +226,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -224,6 +258,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmGuestPatchSettings</ReturnType>
@@ -256,6 +291,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -264,10 +300,10 @@
         <Parameter Name="options" Type="System.ClientModel.Primitives.ModelReaderWriterOptions" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
+        <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to consider when serializing and deserializing the model.</param>
         <summary>
             Gets the data interchange format (JSON, Xml, etc) that the model uses when communicating with the service.
-            <param name="options">The <see cref="T:System.ClientModel.Primitives.ModelReaderWriterOptions" /> to use.</param></summary>
+            </summary>
         <returns>The format that the model uses when communicating with the serivce.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -285,6 +321,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
