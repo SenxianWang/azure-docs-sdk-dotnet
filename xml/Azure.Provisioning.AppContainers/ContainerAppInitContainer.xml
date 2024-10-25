@@ -1,15 +1,15 @@
 <Type Name="ContainerAppInitContainer" FullName="Azure.Provisioning.AppContainers.ContainerAppInitContainer">
-  <TypeSignature Language="C#" Value="public class ContainerAppInitContainer : Azure.Provisioning.Primitives.ProvisioningConstruct" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerAppInitContainer extends Azure.Provisioning.Primitives.ProvisioningConstruct" />
+  <TypeSignature Language="C#" Value="public class ContainerAppInitContainer : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerAppInitContainer extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.AppContainers.ContainerAppInitContainer" />
-  <TypeSignature Language="VB.NET" Value="Public Class ContainerAppInitContainer&#xA;Inherits ProvisioningConstruct" />
-  <TypeSignature Language="F#" Value="type ContainerAppInitContainer = class&#xA;    inherit ProvisioningConstruct" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContainerAppInitContainer&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type ContainerAppInitContainer = class&#xA;    inherit ProvisionableConstruct" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.ProvisioningConstruct</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -81,6 +81,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppContainers.ContainerAppInitContainer.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="containerAppInitContainer.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of ContainerAppInitContainer.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Env">
       <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepList&lt;Azure.Provisioning.AppContainers.ContainerAppEnvironmentVariable&gt; Env { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepList`1&lt;class Azure.Provisioning.AppContainers.ContainerAppEnvironmentVariable&gt; Env" />
@@ -148,18 +170,18 @@
       </Docs>
     </Member>
     <Member MemberName="Resources">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.AppContainerResources&gt; Resources { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppContainers.AppContainerResources&gt; Resources" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppContainers.AppContainerResources Resources { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppContainers.AppContainerResources Resources" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppContainers.ContainerAppInitContainer.Resources" />
-      <MemberSignature Language="VB.NET" Value="Public Property Resources As BicepValue(Of AppContainerResources)" />
-      <MemberSignature Language="F#" Value="member this.Resources : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.AppContainerResources&gt; with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppInitContainer.Resources" />
+      <MemberSignature Language="VB.NET" Value="Public Property Resources As AppContainerResources" />
+      <MemberSignature Language="F#" Value="member this.Resources : Azure.Provisioning.AppContainers.AppContainerResources with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppInitContainer.Resources" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.AppContainerResources&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppContainers.AppContainerResources</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

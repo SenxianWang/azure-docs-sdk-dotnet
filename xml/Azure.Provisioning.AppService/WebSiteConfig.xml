@@ -1,15 +1,15 @@
 <Type Name="WebSiteConfig" FullName="Azure.Provisioning.AppService.WebSiteConfig">
-  <TypeSignature Language="C#" Value="public class WebSiteConfig : Azure.Provisioning.Primitives.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebSiteConfig extends Azure.Provisioning.Primitives.Resource" />
+  <TypeSignature Language="C#" Value="public class WebSiteConfig : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebSiteConfig extends Azure.Provisioning.Primitives.ProvisionableResource" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.AppService.WebSiteConfig" />
-  <TypeSignature Language="VB.NET" Value="Public Class WebSiteConfig&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type WebSiteConfig = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebSiteConfig&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type WebSiteConfig = class&#xA;    inherit ProvisionableResource" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.Resource</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -20,22 +20,22 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WebSiteConfig (string identifierName, string? resourceVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identifierName, string resourceVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public WebSiteConfig (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppService.WebSiteConfig.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (identifierName As String, Optional resourceVersion As String = Nothing)" />
-      <MemberSignature Language="F#" Value="new Azure.Provisioning.AppService.WebSiteConfig : string * string -&gt; Azure.Provisioning.AppService.WebSiteConfig" Usage="new Azure.Provisioning.AppService.WebSiteConfig (identifierName, resourceVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.AppService.WebSiteConfig : string * string -&gt; Azure.Provisioning.AppService.WebSiteConfig" Usage="new Azure.Provisioning.AppService.WebSiteConfig (bicepIdentifier, resourceVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="identifierName" Type="System.String" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
         <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifierName">
+        <param name="bicepIdentifier">
             The the Bicep identifier name of the WebSiteConfig resource.  This can
             be used to refer to the resource in expressions, but is not the Azure
             name of the resource.  This value can contain letters, numbers, and
@@ -181,18 +181,18 @@
       </Docs>
     </Member>
     <Member MemberName="AutoHealRules">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AutoHealRules&gt; AutoHealRules { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.AutoHealRules&gt; AutoHealRules" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.AutoHealRules AutoHealRules { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.AutoHealRules AutoHealRules" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteConfig.AutoHealRules" />
-      <MemberSignature Language="VB.NET" Value="Public Property AutoHealRules As BicepValue(Of AutoHealRules)" />
-      <MemberSignature Language="F#" Value="member this.AutoHealRules : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AutoHealRules&gt; with get, set" Usage="Azure.Provisioning.AppService.WebSiteConfig.AutoHealRules" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoHealRules As AutoHealRules" />
+      <MemberSignature Language="F#" Value="member this.AutoHealRules : Azure.Provisioning.AppService.AutoHealRules with get, set" Usage="Azure.Provisioning.AppService.WebSiteConfig.AutoHealRules" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AutoHealRules&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.AutoHealRules</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -269,18 +269,18 @@
       </Docs>
     </Member>
     <Member MemberName="Cors">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceCorsSettings&gt; Cors { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.AppServiceCorsSettings&gt; Cors" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.AppServiceCorsSettings Cors { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.AppServiceCorsSettings Cors" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteConfig.Cors" />
-      <MemberSignature Language="VB.NET" Value="Public Property Cors As BicepValue(Of AppServiceCorsSettings)" />
-      <MemberSignature Language="F#" Value="member this.Cors : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceCorsSettings&gt; with get, set" Usage="Azure.Provisioning.AppService.WebSiteConfig.Cors" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cors As AppServiceCorsSettings" />
+      <MemberSignature Language="F#" Value="member this.Cors : Azure.Provisioning.AppService.AppServiceCorsSettings with get, set" Usage="Azure.Provisioning.AppService.WebSiteConfig.Cors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceCorsSettings&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.AppServiceCorsSettings</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -309,6 +309,28 @@
             Default documents.
             </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppService.WebSiteConfig.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="webSiteConfig.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of WebSiteConfig.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,11 +403,11 @@
       </Docs>
     </Member>
     <Member MemberName="FromExisting">
-      <MemberSignature Language="C#" Value="public static Azure.Provisioning.AppService.WebSiteConfig FromExisting (string identifierName, string? resourceVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.AppService.WebSiteConfig FromExisting(string identifierName, string resourceVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.AppService.WebSiteConfig FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.AppService.WebSiteConfig FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppService.WebSiteConfig.FromExisting(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (identifierName As String, Optional resourceVersion As String = Nothing) As WebSiteConfig" />
-      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.AppService.WebSiteConfig" Usage="Azure.Provisioning.AppService.WebSiteConfig.FromExisting (identifierName, resourceVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As WebSiteConfig" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.AppService.WebSiteConfig" Usage="Azure.Provisioning.AppService.WebSiteConfig.FromExisting (bicepIdentifier, resourceVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
@@ -395,11 +417,11 @@
         <ReturnType>Azure.Provisioning.AppService.WebSiteConfig</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="identifierName" Type="System.String" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
         <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifierName">
+        <param name="bicepIdentifier">
             The the Bicep identifier name of the WebSiteConfig resource.  This can
             be used to refer to the resource in expressions, but is not the Azure
             name of the resource.  This value can contain letters, numbers, and
@@ -935,18 +957,18 @@
       </Docs>
     </Member>
     <Member MemberName="Limits">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.SiteLimits&gt; Limits { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.SiteLimits&gt; Limits" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.SiteLimits Limits { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.SiteLimits Limits" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteConfig.Limits" />
-      <MemberSignature Language="VB.NET" Value="Public Property Limits As BicepValue(Of SiteLimits)" />
-      <MemberSignature Language="F#" Value="member this.Limits : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.SiteLimits&gt; with get, set" Usage="Azure.Provisioning.AppService.WebSiteConfig.Limits" />
+      <MemberSignature Language="VB.NET" Value="Public Property Limits As SiteLimits" />
+      <MemberSignature Language="F#" Value="member this.Limits : Azure.Provisioning.AppService.SiteLimits with get, set" Usage="Azure.Provisioning.AppService.WebSiteConfig.Limits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.SiteLimits&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.SiteLimits</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -1023,18 +1045,18 @@
       </Docs>
     </Member>
     <Member MemberName="MachineKey">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.SiteMachineKey&gt; MachineKey { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.SiteMachineKey&gt; MachineKey" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.SiteMachineKey MachineKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.SiteMachineKey MachineKey" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteConfig.MachineKey" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MachineKey As BicepValue(Of SiteMachineKey)" />
-      <MemberSignature Language="F#" Value="member this.MachineKey : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.SiteMachineKey&gt;" Usage="Azure.Provisioning.AppService.WebSiteConfig.MachineKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MachineKey As SiteMachineKey" />
+      <MemberSignature Language="F#" Value="member this.MachineKey : Azure.Provisioning.AppService.SiteMachineKey" Usage="Azure.Provisioning.AppService.WebSiteConfig.MachineKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.SiteMachineKey&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.SiteMachineKey</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -1401,18 +1423,18 @@
       </Docs>
     </Member>
     <Member MemberName="Push">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.WebAppPushSettings&gt; Push { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.WebAppPushSettings&gt; Push" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.WebAppPushSettings Push { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.WebAppPushSettings Push" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteConfig.Push" />
-      <MemberSignature Language="VB.NET" Value="Public Property Push As BicepValue(Of WebAppPushSettings)" />
-      <MemberSignature Language="F#" Value="member this.Push : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.WebAppPushSettings&gt; with get, set" Usage="Azure.Provisioning.AppService.WebSiteConfig.Push" />
+      <MemberSignature Language="VB.NET" Value="Public Property Push As WebAppPushSettings" />
+      <MemberSignature Language="F#" Value="member this.Push : Azure.Provisioning.AppService.WebAppPushSettings with get, set" Usage="Azure.Provisioning.AppService.WebSiteConfig.Push" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.WebAppPushSettings&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.WebAppPushSettings</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -1578,18 +1600,18 @@
       </Docs>
     </Member>
     <Member MemberName="SystemData">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt; SystemData { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.SystemData&gt; SystemData" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteConfig.SystemData" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As BicepValue(Of SystemData)" />
-      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;" Usage="Azure.Provisioning.AppService.WebSiteConfig.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.AppService.WebSiteConfig.SystemData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

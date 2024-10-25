@@ -1,15 +1,15 @@
 <Type Name="ContainerRegistryRunData" FullName="Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData">
-  <TypeSignature Language="C#" Value="public class ContainerRegistryRunData : Azure.Provisioning.Primitives.ProvisioningConstruct" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerRegistryRunData extends Azure.Provisioning.Primitives.ProvisioningConstruct" />
+  <TypeSignature Language="C#" Value="public class ContainerRegistryRunData : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerRegistryRunData extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData" />
-  <TypeSignature Language="VB.NET" Value="Public Class ContainerRegistryRunData&#xA;Inherits ProvisioningConstruct" />
-  <TypeSignature Language="F#" Value="type ContainerRegistryRunData = class&#xA;    inherit ProvisioningConstruct" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContainerRegistryRunData&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type ContainerRegistryRunData = class&#xA;    inherit ProvisionableConstruct" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.ContainerRegistry</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.ProvisioningConstruct</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -126,6 +126,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="containerRegistryRunData.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerRegistry</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of ContainerRegistryRunData.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FinishOn">
       <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;DateTimeOffset&gt; FinishOn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype System.DateTimeOffset&gt; FinishOn" />
@@ -171,18 +193,18 @@
       </Docs>
     </Member>
     <Member MemberName="ImageUpdateTrigger">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistryImageUpdateTrigger&gt; ImageUpdateTrigger { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.ContainerRegistry.ContainerRegistryImageUpdateTrigger&gt; ImageUpdateTrigger" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ContainerRegistry.ContainerRegistryImageUpdateTrigger ImageUpdateTrigger { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ContainerRegistry.ContainerRegistryImageUpdateTrigger ImageUpdateTrigger" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.ImageUpdateTrigger" />
-      <MemberSignature Language="VB.NET" Value="Public Property ImageUpdateTrigger As BicepValue(Of ContainerRegistryImageUpdateTrigger)" />
-      <MemberSignature Language="F#" Value="member this.ImageUpdateTrigger : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistryImageUpdateTrigger&gt; with get, set" Usage="Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.ImageUpdateTrigger" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageUpdateTrigger As ContainerRegistryImageUpdateTrigger" />
+      <MemberSignature Language="F#" Value="member this.ImageUpdateTrigger : Azure.Provisioning.ContainerRegistry.ContainerRegistryImageUpdateTrigger with get, set" Usage="Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.ImageUpdateTrigger" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistryImageUpdateTrigger&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.ContainerRegistry.ContainerRegistryImageUpdateTrigger</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -238,18 +260,18 @@
       </Docs>
     </Member>
     <Member MemberName="LogArtifact">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistryImageDescriptor&gt; LogArtifact { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.ContainerRegistry.ContainerRegistryImageDescriptor&gt; LogArtifact" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ContainerRegistry.ContainerRegistryImageDescriptor LogArtifact { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ContainerRegistry.ContainerRegistryImageDescriptor LogArtifact" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.LogArtifact" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogArtifact As BicepValue(Of ContainerRegistryImageDescriptor)" />
-      <MemberSignature Language="F#" Value="member this.LogArtifact : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistryImageDescriptor&gt;" Usage="Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.LogArtifact" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogArtifact As ContainerRegistryImageDescriptor" />
+      <MemberSignature Language="F#" Value="member this.LogArtifact : Azure.Provisioning.ContainerRegistry.ContainerRegistryImageDescriptor" Usage="Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.LogArtifact" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistryImageDescriptor&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.ContainerRegistry.ContainerRegistryImageDescriptor</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -305,18 +327,18 @@
       </Docs>
     </Member>
     <Member MemberName="Platform">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistryPlatformProperties&gt; Platform { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.ContainerRegistry.ContainerRegistryPlatformProperties&gt; Platform" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ContainerRegistry.ContainerRegistryPlatformProperties Platform { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ContainerRegistry.ContainerRegistryPlatformProperties Platform" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.Platform" />
-      <MemberSignature Language="VB.NET" Value="Public Property Platform As BicepValue(Of ContainerRegistryPlatformProperties)" />
-      <MemberSignature Language="F#" Value="member this.Platform : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistryPlatformProperties&gt; with get, set" Usage="Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.Platform" />
+      <MemberSignature Language="VB.NET" Value="Public Property Platform As ContainerRegistryPlatformProperties" />
+      <MemberSignature Language="F#" Value="member this.Platform : Azure.Provisioning.ContainerRegistry.ContainerRegistryPlatformProperties with get, set" Usage="Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.Platform" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistryPlatformProperties&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.ContainerRegistry.ContainerRegistryPlatformProperties</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -439,18 +461,18 @@
       </Docs>
     </Member>
     <Member MemberName="SourceTrigger">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistrySourceTriggerDescriptor&gt; SourceTrigger { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.ContainerRegistry.ContainerRegistrySourceTriggerDescriptor&gt; SourceTrigger" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ContainerRegistry.ContainerRegistrySourceTriggerDescriptor SourceTrigger { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ContainerRegistry.ContainerRegistrySourceTriggerDescriptor SourceTrigger" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.SourceTrigger" />
-      <MemberSignature Language="VB.NET" Value="Public Property SourceTrigger As BicepValue(Of ContainerRegistrySourceTriggerDescriptor)" />
-      <MemberSignature Language="F#" Value="member this.SourceTrigger : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistrySourceTriggerDescriptor&gt; with get, set" Usage="Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.SourceTrigger" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceTrigger As ContainerRegistrySourceTriggerDescriptor" />
+      <MemberSignature Language="F#" Value="member this.SourceTrigger : Azure.Provisioning.ContainerRegistry.ContainerRegistrySourceTriggerDescriptor with get, set" Usage="Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.SourceTrigger" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistrySourceTriggerDescriptor&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.ContainerRegistry.ContainerRegistrySourceTriggerDescriptor</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -505,18 +527,18 @@
       </Docs>
     </Member>
     <Member MemberName="SystemData">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt; SystemData { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.SystemData&gt; SystemData" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.SystemData" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As BicepValue(Of SystemData)" />
-      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;" Usage="Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.SystemData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -549,18 +571,18 @@
       </Docs>
     </Member>
     <Member MemberName="TimerTrigger">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistryTimerTriggerDescriptor&gt; TimerTrigger { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.ContainerRegistry.ContainerRegistryTimerTriggerDescriptor&gt; TimerTrigger" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ContainerRegistry.ContainerRegistryTimerTriggerDescriptor TimerTrigger { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ContainerRegistry.ContainerRegistryTimerTriggerDescriptor TimerTrigger" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.TimerTrigger" />
-      <MemberSignature Language="VB.NET" Value="Public Property TimerTrigger As BicepValue(Of ContainerRegistryTimerTriggerDescriptor)" />
-      <MemberSignature Language="F#" Value="member this.TimerTrigger : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistryTimerTriggerDescriptor&gt; with get, set" Usage="Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.TimerTrigger" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimerTrigger As ContainerRegistryTimerTriggerDescriptor" />
+      <MemberSignature Language="F#" Value="member this.TimerTrigger : Azure.Provisioning.ContainerRegistry.ContainerRegistryTimerTriggerDescriptor with get, set" Usage="Azure.Provisioning.ContainerRegistry.ContainerRegistryRunData.TimerTrigger" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistryTimerTriggerDescriptor&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.ContainerRegistry.ContainerRegistryTimerTriggerDescriptor</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

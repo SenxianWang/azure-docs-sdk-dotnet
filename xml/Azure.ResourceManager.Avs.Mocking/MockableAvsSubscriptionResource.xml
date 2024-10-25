@@ -8,6 +8,7 @@
     <AssemblyName>Azure.ResourceManager.Avs</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
@@ -27,6 +28,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Avs</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,6 +46,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Avs</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Avs.Models.AvsSubscriptionQuotaAvailabilityResult&gt;</ReturnType>
@@ -53,11 +56,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="location"> Azure region. </param>
+        <param name="location"> The name of the Azure region. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Return quota for subscription by region
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.AVS/locations/{location}/checkQuotaAvailability</description></item><item><term>Operation Id</term><description>Locations_CheckQuotaAvailability</description></item><item><term>Default Api Version</term><description>2023-03-01</description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.AVS/locations/{location}/checkQuotaAvailability</description></item><item><term>Operation Id</term><description>Locations_CheckQuotaAvailability</description></item><item><term>Default Api Version</term><description>2023-09-01</description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -72,6 +75,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Avs</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Avs.Models.AvsSubscriptionQuotaAvailabilityResult&gt;&gt;</ReturnType>
@@ -81,11 +85,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="location"> Azure region. </param>
+        <param name="location"> The name of the Azure region. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Return quota for subscription by region
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.AVS/locations/{location}/checkQuotaAvailability</description></item><item><term>Operation Id</term><description>Locations_CheckQuotaAvailability</description></item><item><term>Default Api Version</term><description>2023-03-01</description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.AVS/locations/{location}/checkQuotaAvailability</description></item><item><term>Operation Id</term><description>Locations_CheckQuotaAvailability</description></item><item><term>Default Api Version</term><description>2023-09-01</description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -100,6 +104,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Avs</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -134,6 +139,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Avs</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Avs.Models.AvsSubscriptionTrialAvailabilityResult&gt;</ReturnType>
@@ -144,12 +150,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="location"> Azure region. </param>
-        <param name="sku"> The sku to check for trial availability. </param>
+        <param name="location"> The name of the Azure region. </param>
+        <param name="sku"> Optionally, check for a specific SKU. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Return trial status for subscription by region
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.AVS/locations/{location}/checkTrialAvailability</description></item><item><term>Operation Id</term><description>Locations_CheckTrialAvailability</description></item><item><term>Default Api Version</term><description>2023-03-01</description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.AVS/locations/{location}/checkTrialAvailability</description></item><item><term>Operation Id</term><description>Locations_CheckTrialAvailability</description></item><item><term>Default Api Version</term><description>2023-09-01</description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -164,6 +170,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Avs</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -198,6 +205,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Avs</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Avs.Models.AvsSubscriptionTrialAvailabilityResult&gt;&gt;</ReturnType>
@@ -208,12 +216,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="location"> Azure region. </param>
-        <param name="sku"> The sku to check for trial availability. </param>
+        <param name="location"> The name of the Azure region. </param>
+        <param name="sku"> Optionally, check for a specific SKU. </param>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
             Return trial status for subscription by region
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.AVS/locations/{location}/checkTrialAvailability</description></item><item><term>Operation Id</term><description>Locations_CheckTrialAvailability</description></item><item><term>Default Api Version</term><description>2023-03-01</description></item></list></summary>
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.AVS/locations/{location}/checkTrialAvailability</description></item><item><term>Operation Id</term><description>Locations_CheckTrialAvailability</description></item><item><term>Default Api Version</term><description>2023-09-01</description></item></list></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,6 +236,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Avs</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Avs.AvsPrivateCloudResource&gt;</ReturnType>
@@ -238,8 +247,8 @@
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            List private clouds in a subscription
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.AVS/privateClouds</description></item><item><term>Operation Id</term><description>PrivateClouds_ListInSubscription</description></item><item><term>Default Api Version</term><description>2023-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Avs.AvsPrivateCloudResource" /></description></item></list></summary>
+            List PrivateCloud resources by subscription ID
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.AVS/privateClouds</description></item><item><term>Operation Id</term><description>PrivateClouds_ListInSubscription</description></item><item><term>Default Api Version</term><description>2023-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Avs.AvsPrivateCloudResource" /></description></item></list></summary>
         <returns> A collection of <see cref="T:Azure.ResourceManager.Avs.AvsPrivateCloudResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -254,6 +263,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.Avs</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Avs.AvsPrivateCloudResource&gt;</ReturnType>
@@ -264,8 +274,8 @@
       <Docs>
         <param name="cancellationToken"> The cancellation token to use. </param>
         <summary>
-            List private clouds in a subscription
-            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.AVS/privateClouds</description></item><item><term>Operation Id</term><description>PrivateClouds_ListInSubscription</description></item><item><term>Default Api Version</term><description>2023-03-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Avs.AvsPrivateCloudResource" /></description></item></list></summary>
+            List PrivateCloud resources by subscription ID
+            <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/Microsoft.AVS/privateClouds</description></item><item><term>Operation Id</term><description>PrivateClouds_ListInSubscription</description></item><item><term>Default Api Version</term><description>2023-09-01</description></item><item><term>Resource</term><description><see cref="T:Azure.ResourceManager.Avs.AvsPrivateCloudResource" /></description></item></list></summary>
         <returns> An async collection of <see cref="T:Azure.ResourceManager.Avs.AvsPrivateCloudResource" /> that may take multiple service requests to iterate over. </returns>
         <remarks>To be added.</remarks>
       </Docs>

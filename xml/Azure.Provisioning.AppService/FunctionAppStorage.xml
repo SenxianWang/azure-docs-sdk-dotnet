@@ -1,15 +1,15 @@
 <Type Name="FunctionAppStorage" FullName="Azure.Provisioning.AppService.FunctionAppStorage">
-  <TypeSignature Language="C#" Value="public class FunctionAppStorage : Azure.Provisioning.Primitives.ProvisioningConstruct" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FunctionAppStorage extends Azure.Provisioning.Primitives.ProvisioningConstruct" />
+  <TypeSignature Language="C#" Value="public class FunctionAppStorage : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FunctionAppStorage extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.AppService.FunctionAppStorage" />
-  <TypeSignature Language="VB.NET" Value="Public Class FunctionAppStorage&#xA;Inherits ProvisioningConstruct" />
-  <TypeSignature Language="F#" Value="type FunctionAppStorage = class&#xA;    inherit ProvisioningConstruct" />
+  <TypeSignature Language="VB.NET" Value="Public Class FunctionAppStorage&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type FunctionAppStorage = class&#xA;    inherit ProvisionableConstruct" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.ProvisioningConstruct</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -38,24 +38,46 @@
       </Docs>
     </Member>
     <Member MemberName="Authentication">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.FunctionAppStorageAuthentication&gt; Authentication { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.FunctionAppStorageAuthentication&gt; Authentication" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.FunctionAppStorageAuthentication Authentication { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.FunctionAppStorageAuthentication Authentication" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.FunctionAppStorage.Authentication" />
-      <MemberSignature Language="VB.NET" Value="Public Property Authentication As BicepValue(Of FunctionAppStorageAuthentication)" />
-      <MemberSignature Language="F#" Value="member this.Authentication : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.FunctionAppStorageAuthentication&gt; with get, set" Usage="Azure.Provisioning.AppService.FunctionAppStorage.Authentication" />
+      <MemberSignature Language="VB.NET" Value="Public Property Authentication As FunctionAppStorageAuthentication" />
+      <MemberSignature Language="F#" Value="member this.Authentication : Azure.Provisioning.AppService.FunctionAppStorageAuthentication with get, set" Usage="Azure.Provisioning.AppService.FunctionAppStorage.Authentication" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.FunctionAppStorageAuthentication&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.FunctionAppStorageAuthentication</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
             Authentication method to access the storage account for deployment.
             </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppService.FunctionAppStorage.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="functionAppStorage.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of FunctionAppStorage.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

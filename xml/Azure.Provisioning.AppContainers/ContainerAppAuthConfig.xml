@@ -1,15 +1,15 @@
 <Type Name="ContainerAppAuthConfig" FullName="Azure.Provisioning.AppContainers.ContainerAppAuthConfig">
-  <TypeSignature Language="C#" Value="public class ContainerAppAuthConfig : Azure.Provisioning.Primitives.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerAppAuthConfig extends Azure.Provisioning.Primitives.Resource" />
+  <TypeSignature Language="C#" Value="public class ContainerAppAuthConfig : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerAppAuthConfig extends Azure.Provisioning.Primitives.ProvisionableResource" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.AppContainers.ContainerAppAuthConfig" />
-  <TypeSignature Language="VB.NET" Value="Public Class ContainerAppAuthConfig&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type ContainerAppAuthConfig = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContainerAppAuthConfig&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type ContainerAppAuthConfig = class&#xA;    inherit ProvisionableResource" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.Resource</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -20,22 +20,22 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ContainerAppAuthConfig (string identifierName, string? resourceVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identifierName, string resourceVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public ContainerAppAuthConfig (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppContainers.ContainerAppAuthConfig.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (identifierName As String, Optional resourceVersion As String = Nothing)" />
-      <MemberSignature Language="F#" Value="new Azure.Provisioning.AppContainers.ContainerAppAuthConfig : string * string -&gt; Azure.Provisioning.AppContainers.ContainerAppAuthConfig" Usage="new Azure.Provisioning.AppContainers.ContainerAppAuthConfig (identifierName, resourceVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.AppContainers.ContainerAppAuthConfig : string * string -&gt; Azure.Provisioning.AppContainers.ContainerAppAuthConfig" Usage="new Azure.Provisioning.AppContainers.ContainerAppAuthConfig (bicepIdentifier, resourceVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="identifierName" Type="System.String" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
         <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifierName">
+        <param name="bicepIdentifier">
             The the Bicep identifier name of the ContainerAppAuthConfig resource.
             This can be used to refer to the resource in expressions, but is not
             the Azure name of the resource.  This value can contain letters,
@@ -48,19 +48,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppContainers.ContainerAppAuthConfig.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="containerAppAuthConfig.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of ContainerAppAuthConfig.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="EncryptionSettings">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.EncryptionSettings&gt; EncryptionSettings { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppContainers.EncryptionSettings&gt; EncryptionSettings" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppContainers.EncryptionSettings EncryptionSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppContainers.EncryptionSettings EncryptionSettings" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppContainers.ContainerAppAuthConfig.EncryptionSettings" />
-      <MemberSignature Language="VB.NET" Value="Public Property EncryptionSettings As BicepValue(Of EncryptionSettings)" />
-      <MemberSignature Language="F#" Value="member this.EncryptionSettings : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.EncryptionSettings&gt; with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppAuthConfig.EncryptionSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property EncryptionSettings As EncryptionSettings" />
+      <MemberSignature Language="F#" Value="member this.EncryptionSettings : Azure.Provisioning.AppContainers.EncryptionSettings with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppAuthConfig.EncryptionSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.EncryptionSettings&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppContainers.EncryptionSettings</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -72,11 +94,11 @@
       </Docs>
     </Member>
     <Member MemberName="FromExisting">
-      <MemberSignature Language="C#" Value="public static Azure.Provisioning.AppContainers.ContainerAppAuthConfig FromExisting (string identifierName, string? resourceVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.AppContainers.ContainerAppAuthConfig FromExisting(string identifierName, string resourceVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.AppContainers.ContainerAppAuthConfig FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.AppContainers.ContainerAppAuthConfig FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppContainers.ContainerAppAuthConfig.FromExisting(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (identifierName As String, Optional resourceVersion As String = Nothing) As ContainerAppAuthConfig" />
-      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.AppContainers.ContainerAppAuthConfig" Usage="Azure.Provisioning.AppContainers.ContainerAppAuthConfig.FromExisting (identifierName, resourceVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As ContainerAppAuthConfig" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.AppContainers.ContainerAppAuthConfig" Usage="Azure.Provisioning.AppContainers.ContainerAppAuthConfig.FromExisting (bicepIdentifier, resourceVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
@@ -86,11 +108,11 @@
         <ReturnType>Azure.Provisioning.AppContainers.ContainerAppAuthConfig</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="identifierName" Type="System.String" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
         <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifierName">
+        <param name="bicepIdentifier">
             The the Bicep identifier name of the ContainerAppAuthConfig resource.
             This can be used to refer to the resource in expressions, but is not
             the Azure name of the resource.  This value can contain letters,
@@ -105,18 +127,18 @@
       </Docs>
     </Member>
     <Member MemberName="GlobalValidation">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppGlobalValidation&gt; GlobalValidation { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppContainers.ContainerAppGlobalValidation&gt; GlobalValidation" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppContainers.ContainerAppGlobalValidation GlobalValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppContainers.ContainerAppGlobalValidation GlobalValidation" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppContainers.ContainerAppAuthConfig.GlobalValidation" />
-      <MemberSignature Language="VB.NET" Value="Public Property GlobalValidation As BicepValue(Of ContainerAppGlobalValidation)" />
-      <MemberSignature Language="F#" Value="member this.GlobalValidation : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppGlobalValidation&gt; with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppAuthConfig.GlobalValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Property GlobalValidation As ContainerAppGlobalValidation" />
+      <MemberSignature Language="F#" Value="member this.GlobalValidation : Azure.Provisioning.AppContainers.ContainerAppGlobalValidation with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppAuthConfig.GlobalValidation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppGlobalValidation&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppContainers.ContainerAppGlobalValidation</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -128,18 +150,18 @@
       </Docs>
     </Member>
     <Member MemberName="HttpSettings">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppHttpSettings&gt; HttpSettings { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppContainers.ContainerAppHttpSettings&gt; HttpSettings" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppContainers.ContainerAppHttpSettings HttpSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppContainers.ContainerAppHttpSettings HttpSettings" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppContainers.ContainerAppAuthConfig.HttpSettings" />
-      <MemberSignature Language="VB.NET" Value="Public Property HttpSettings As BicepValue(Of ContainerAppHttpSettings)" />
-      <MemberSignature Language="F#" Value="member this.HttpSettings : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppHttpSettings&gt; with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppAuthConfig.HttpSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpSettings As ContainerAppHttpSettings" />
+      <MemberSignature Language="F#" Value="member this.HttpSettings : Azure.Provisioning.AppContainers.ContainerAppHttpSettings with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppAuthConfig.HttpSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppHttpSettings&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppContainers.ContainerAppHttpSettings</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -174,18 +196,18 @@
       </Docs>
     </Member>
     <Member MemberName="IdentityProviders">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppIdentityProvidersConfiguration&gt; IdentityProviders { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppContainers.ContainerAppIdentityProvidersConfiguration&gt; IdentityProviders" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppContainers.ContainerAppIdentityProvidersConfiguration IdentityProviders { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppContainers.ContainerAppIdentityProvidersConfiguration IdentityProviders" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppContainers.ContainerAppAuthConfig.IdentityProviders" />
-      <MemberSignature Language="VB.NET" Value="Public Property IdentityProviders As BicepValue(Of ContainerAppIdentityProvidersConfiguration)" />
-      <MemberSignature Language="F#" Value="member this.IdentityProviders : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppIdentityProvidersConfiguration&gt; with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppAuthConfig.IdentityProviders" />
+      <MemberSignature Language="VB.NET" Value="Public Property IdentityProviders As ContainerAppIdentityProvidersConfiguration" />
+      <MemberSignature Language="F#" Value="member this.IdentityProviders : Azure.Provisioning.AppContainers.ContainerAppIdentityProvidersConfiguration with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppAuthConfig.IdentityProviders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppIdentityProvidersConfiguration&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppContainers.ContainerAppIdentityProvidersConfiguration</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -197,18 +219,18 @@
       </Docs>
     </Member>
     <Member MemberName="Login">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppLogin&gt; Login { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppContainers.ContainerAppLogin&gt; Login" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppContainers.ContainerAppLogin Login { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppContainers.ContainerAppLogin Login" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppContainers.ContainerAppAuthConfig.Login" />
-      <MemberSignature Language="VB.NET" Value="Public Property Login As BicepValue(Of ContainerAppLogin)" />
-      <MemberSignature Language="F#" Value="member this.Login : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppLogin&gt; with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppAuthConfig.Login" />
+      <MemberSignature Language="VB.NET" Value="Public Property Login As ContainerAppLogin" />
+      <MemberSignature Language="F#" Value="member this.Login : Azure.Provisioning.AppContainers.ContainerAppLogin with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppAuthConfig.Login" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppLogin&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppContainers.ContainerAppLogin</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -264,18 +286,18 @@
       </Docs>
     </Member>
     <Member MemberName="Platform">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppAuthPlatform&gt; Platform { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppContainers.ContainerAppAuthPlatform&gt; Platform" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppContainers.ContainerAppAuthPlatform Platform { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppContainers.ContainerAppAuthPlatform Platform" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppContainers.ContainerAppAuthConfig.Platform" />
-      <MemberSignature Language="VB.NET" Value="Public Property Platform As BicepValue(Of ContainerAppAuthPlatform)" />
-      <MemberSignature Language="F#" Value="member this.Platform : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppAuthPlatform&gt; with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppAuthConfig.Platform" />
+      <MemberSignature Language="VB.NET" Value="Public Property Platform As ContainerAppAuthPlatform" />
+      <MemberSignature Language="F#" Value="member this.Platform : Azure.Provisioning.AppContainers.ContainerAppAuthPlatform with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppAuthConfig.Platform" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppAuthPlatform&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppContainers.ContainerAppAuthPlatform</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -287,18 +309,18 @@
       </Docs>
     </Member>
     <Member MemberName="SystemData">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt; SystemData { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.SystemData&gt; SystemData" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppContainers.ContainerAppAuthConfig.SystemData" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As BicepValue(Of SystemData)" />
-      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;" Usage="Azure.Provisioning.AppContainers.ContainerAppAuthConfig.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.AppContainers.ContainerAppAuthConfig.SystemData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

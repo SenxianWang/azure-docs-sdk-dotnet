@@ -84,7 +84,7 @@
             Combines multiple string values <paramref name="values" /> and returns
             the concatenated string.  This represents the <c>concat</c> Bicep
             function.  To improve readability, prefer
-            <see cref="M:Azure.Provisioning.Expressions.BicepFunction.Interpolate(System.FormattableString)" /> instead of
+            <see cref="M:Azure.Provisioning.Expressions.BicepFunction.Interpolate(Azure.Provisioning.Expressions.BicepInterpolatedStringHandler)" /> instead of
             <see cref="M:Azure.Provisioning.Expressions.BicepFunction.Concat(Azure.Provisioning.BicepValue{System.String}[])" />.
             </summary>
         <returns>A string or array of concatenated values.</returns>
@@ -389,11 +389,11 @@
       </Docs>
     </Member>
     <Member MemberName="Interpolate">
-      <MemberSignature Language="C#" Value="public static Azure.Provisioning.BicepValue&lt;string&gt; Interpolate (FormattableString text);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.BicepValue`1&lt;string&gt; Interpolate(class System.FormattableString text) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Expressions.BicepFunction.Interpolate(System.FormattableString)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function Interpolate (text As FormattableString) As BicepValue(Of String)" />
-      <MemberSignature Language="F#" Value="static member Interpolate : FormattableString -&gt; Azure.Provisioning.BicepValue&lt;string&gt;" Usage="Azure.Provisioning.Expressions.BicepFunction.Interpolate text" />
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.BicepValue&lt;string&gt; Interpolate (Azure.Provisioning.Expressions.BicepInterpolatedStringHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.BicepValue`1&lt;string&gt; Interpolate(valuetype Azure.Provisioning.Expressions.BicepInterpolatedStringHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Expressions.BicepFunction.Interpolate(Azure.Provisioning.Expressions.BicepInterpolatedStringHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Interpolate (handler As BicepInterpolatedStringHandler) As BicepValue(Of String)" />
+      <MemberSignature Language="F#" Value="static member Interpolate : Azure.Provisioning.Expressions.BicepInterpolatedStringHandler -&gt; Azure.Provisioning.BicepValue&lt;string&gt;" Usage="Azure.Provisioning.Expressions.BicepFunction.Interpolate handler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning</AssemblyName>
@@ -403,10 +403,10 @@
         <ReturnType>Azure.Provisioning.BicepValue&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.FormattableString" />
+        <Parameter Name="handler" Type="Azure.Provisioning.Expressions.BicepInterpolatedStringHandler" />
       </Parameters>
       <Docs>
-        <param name="text">The formattable string.</param>
+        <param name="handler">A bicep interpolated string handler.</param>
         <summary>
             Convert a formattable string with literal text, C# expressions, and
             Bicep expressions into an interpolated Bicep string.

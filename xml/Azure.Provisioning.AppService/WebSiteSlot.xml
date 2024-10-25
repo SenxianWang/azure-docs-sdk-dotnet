@@ -1,15 +1,15 @@
 <Type Name="WebSiteSlot" FullName="Azure.Provisioning.AppService.WebSiteSlot">
-  <TypeSignature Language="C#" Value="public class WebSiteSlot : Azure.Provisioning.Primitives.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebSiteSlot extends Azure.Provisioning.Primitives.Resource" />
+  <TypeSignature Language="C#" Value="public class WebSiteSlot : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebSiteSlot extends Azure.Provisioning.Primitives.ProvisionableResource" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.AppService.WebSiteSlot" />
-  <TypeSignature Language="VB.NET" Value="Public Class WebSiteSlot&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type WebSiteSlot = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebSiteSlot&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type WebSiteSlot = class&#xA;    inherit ProvisionableResource" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.Resource</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -20,22 +20,22 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WebSiteSlot (string identifierName, string? resourceVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identifierName, string resourceVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public WebSiteSlot (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppService.WebSiteSlot.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (identifierName As String, Optional resourceVersion As String = Nothing)" />
-      <MemberSignature Language="F#" Value="new Azure.Provisioning.AppService.WebSiteSlot : string * string -&gt; Azure.Provisioning.AppService.WebSiteSlot" Usage="new Azure.Provisioning.AppService.WebSiteSlot (identifierName, resourceVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.AppService.WebSiteSlot : string * string -&gt; Azure.Provisioning.AppService.WebSiteSlot" Usage="new Azure.Provisioning.AppService.WebSiteSlot (bicepIdentifier, resourceVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="identifierName" Type="System.String" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
         <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifierName">
+        <param name="bicepIdentifier">
             The the Bicep identifier name of the WebSiteSlot resource.  This can be
             used to refer to the resource in expressions, but is not the Azure
             name of the resource.  This value can contain letters, numbers, and
@@ -142,18 +142,18 @@
       </Docs>
     </Member>
     <Member MemberName="CloningInfo">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.CloningInfo&gt; CloningInfo { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.CloningInfo&gt; CloningInfo" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.CloningInfo CloningInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.CloningInfo CloningInfo" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteSlot.CloningInfo" />
-      <MemberSignature Language="VB.NET" Value="Public Property CloningInfo As BicepValue(Of CloningInfo)" />
-      <MemberSignature Language="F#" Value="member this.CloningInfo : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.CloningInfo&gt; with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.CloningInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property CloningInfo As CloningInfo" />
+      <MemberSignature Language="F#" Value="member this.CloningInfo : Azure.Provisioning.AppService.CloningInfo with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.CloningInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.CloningInfo&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.CloningInfo</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -232,18 +232,18 @@
       </Docs>
     </Member>
     <Member MemberName="DaprConfig">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppDaprConfig&gt; DaprConfig { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.AppDaprConfig&gt; DaprConfig" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.AppDaprConfig DaprConfig { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.AppDaprConfig DaprConfig" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteSlot.DaprConfig" />
-      <MemberSignature Language="VB.NET" Value="Public Property DaprConfig As BicepValue(Of AppDaprConfig)" />
-      <MemberSignature Language="F#" Value="member this.DaprConfig : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppDaprConfig&gt; with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.DaprConfig" />
+      <MemberSignature Language="VB.NET" Value="Public Property DaprConfig As AppDaprConfig" />
+      <MemberSignature Language="F#" Value="member this.DaprConfig : Azure.Provisioning.AppService.AppDaprConfig with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.DaprConfig" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppDaprConfig&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.AppDaprConfig</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -275,19 +275,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppService.WebSiteSlot.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="webSiteSlot.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of WebSiteSlot.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DnsConfiguration">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.SiteDnsConfig&gt; DnsConfiguration { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.SiteDnsConfig&gt; DnsConfiguration" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.SiteDnsConfig DnsConfiguration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.SiteDnsConfig DnsConfiguration" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteSlot.DnsConfiguration" />
-      <MemberSignature Language="VB.NET" Value="Public Property DnsConfiguration As BicepValue(Of SiteDnsConfig)" />
-      <MemberSignature Language="F#" Value="member this.DnsConfiguration : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.SiteDnsConfig&gt; with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.DnsConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property DnsConfiguration As SiteDnsConfig" />
+      <MemberSignature Language="F#" Value="member this.DnsConfiguration : Azure.Provisioning.AppService.SiteDnsConfig with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.DnsConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.SiteDnsConfig&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.SiteDnsConfig</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -322,18 +344,18 @@
       </Docs>
     </Member>
     <Member MemberName="ExtendedLocation">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ExtendedAzureLocation&gt; ExtendedLocation { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.ExtendedAzureLocation&gt; ExtendedLocation" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.ExtendedAzureLocation ExtendedLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.ExtendedAzureLocation ExtendedLocation" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteSlot.ExtendedLocation" />
-      <MemberSignature Language="VB.NET" Value="Public Property ExtendedLocation As BicepValue(Of ExtendedAzureLocation)" />
-      <MemberSignature Language="F#" Value="member this.ExtendedLocation : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ExtendedAzureLocation&gt; with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.ExtendedLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExtendedLocation As ExtendedAzureLocation" />
+      <MemberSignature Language="F#" Value="member this.ExtendedLocation : Azure.Provisioning.Resources.ExtendedAzureLocation with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.ExtendedLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ExtendedAzureLocation&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.ExtendedAzureLocation</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -344,11 +366,11 @@
       </Docs>
     </Member>
     <Member MemberName="FromExisting">
-      <MemberSignature Language="C#" Value="public static Azure.Provisioning.AppService.WebSiteSlot FromExisting (string identifierName, string? resourceVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.AppService.WebSiteSlot FromExisting(string identifierName, string resourceVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.AppService.WebSiteSlot FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.AppService.WebSiteSlot FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppService.WebSiteSlot.FromExisting(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (identifierName As String, Optional resourceVersion As String = Nothing) As WebSiteSlot" />
-      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.AppService.WebSiteSlot" Usage="Azure.Provisioning.AppService.WebSiteSlot.FromExisting (identifierName, resourceVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As WebSiteSlot" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.AppService.WebSiteSlot" Usage="Azure.Provisioning.AppService.WebSiteSlot.FromExisting (bicepIdentifier, resourceVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
@@ -358,11 +380,11 @@
         <ReturnType>Azure.Provisioning.AppService.WebSiteSlot</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="identifierName" Type="System.String" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
         <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifierName">
+        <param name="bicepIdentifier">
             The the Bicep identifier name of the WebSiteSlot resource.  This can be
             used to refer to the resource in expressions, but is not the Azure
             name of the resource.  This value can contain letters, numbers, and
@@ -377,18 +399,18 @@
       </Docs>
     </Member>
     <Member MemberName="FunctionAppConfig">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.FunctionAppConfig&gt; FunctionAppConfig { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.FunctionAppConfig&gt; FunctionAppConfig" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.FunctionAppConfig FunctionAppConfig { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.FunctionAppConfig FunctionAppConfig" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteSlot.FunctionAppConfig" />
-      <MemberSignature Language="VB.NET" Value="Public Property FunctionAppConfig As BicepValue(Of FunctionAppConfig)" />
-      <MemberSignature Language="F#" Value="member this.FunctionAppConfig : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.FunctionAppConfig&gt; with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.FunctionAppConfig" />
+      <MemberSignature Language="VB.NET" Value="Public Property FunctionAppConfig As FunctionAppConfig" />
+      <MemberSignature Language="F#" Value="member this.FunctionAppConfig : Azure.Provisioning.AppService.FunctionAppConfig with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.FunctionAppConfig" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.FunctionAppConfig&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.FunctionAppConfig</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -428,18 +450,18 @@
       </Docs>
     </Member>
     <Member MemberName="HostingEnvironmentProfile">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.HostingEnvironmentProfile&gt; HostingEnvironmentProfile { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.HostingEnvironmentProfile&gt; HostingEnvironmentProfile" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.HostingEnvironmentProfile HostingEnvironmentProfile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.HostingEnvironmentProfile HostingEnvironmentProfile" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteSlot.HostingEnvironmentProfile" />
-      <MemberSignature Language="VB.NET" Value="Public Property HostingEnvironmentProfile As BicepValue(Of HostingEnvironmentProfile)" />
-      <MemberSignature Language="F#" Value="member this.HostingEnvironmentProfile : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.HostingEnvironmentProfile&gt; with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.HostingEnvironmentProfile" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostingEnvironmentProfile As HostingEnvironmentProfile" />
+      <MemberSignature Language="F#" Value="member this.HostingEnvironmentProfile : Azure.Provisioning.AppService.HostingEnvironmentProfile with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.HostingEnvironmentProfile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.HostingEnvironmentProfile&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.HostingEnvironmentProfile</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -517,18 +539,18 @@
       </Docs>
     </Member>
     <Member MemberName="Identity">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ManagedServiceIdentity&gt; Identity { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.ManagedServiceIdentity&gt; Identity" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.ManagedServiceIdentity Identity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.ManagedServiceIdentity Identity" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteSlot.Identity" />
-      <MemberSignature Language="VB.NET" Value="Public Property Identity As BicepValue(Of ManagedServiceIdentity)" />
-      <MemberSignature Language="F#" Value="member this.Identity : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ManagedServiceIdentity&gt; with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Identity As ManagedServiceIdentity" />
+      <MemberSignature Language="F#" Value="member this.Identity : Azure.Provisioning.Resources.ManagedServiceIdentity with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ManagedServiceIdentity&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.ManagedServiceIdentity</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -1202,18 +1224,18 @@
       </Docs>
     </Member>
     <Member MemberName="ResourceConfig">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.FunctionAppResourceConfig&gt; ResourceConfig { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.FunctionAppResourceConfig&gt; ResourceConfig" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.FunctionAppResourceConfig ResourceConfig { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.FunctionAppResourceConfig ResourceConfig" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteSlot.ResourceConfig" />
-      <MemberSignature Language="VB.NET" Value="Public Property ResourceConfig As BicepValue(Of FunctionAppResourceConfig)" />
-      <MemberSignature Language="F#" Value="member this.ResourceConfig : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.FunctionAppResourceConfig&gt; with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.ResourceConfig" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceConfig As FunctionAppResourceConfig" />
+      <MemberSignature Language="F#" Value="member this.ResourceConfig : Azure.Provisioning.AppService.FunctionAppResourceConfig with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.ResourceConfig" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.FunctionAppResourceConfig&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.FunctionAppResourceConfig</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -1246,18 +1268,18 @@
       </Docs>
     </Member>
     <Member MemberName="SiteConfig">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.SiteConfigProperties&gt; SiteConfig { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.SiteConfigProperties&gt; SiteConfig" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.SiteConfigProperties SiteConfig { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.SiteConfigProperties SiteConfig" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteSlot.SiteConfig" />
-      <MemberSignature Language="VB.NET" Value="Public Property SiteConfig As BicepValue(Of SiteConfigProperties)" />
-      <MemberSignature Language="F#" Value="member this.SiteConfig : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.SiteConfigProperties&gt; with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.SiteConfig" />
+      <MemberSignature Language="VB.NET" Value="Public Property SiteConfig As SiteConfigProperties" />
+      <MemberSignature Language="F#" Value="member this.SiteConfig : Azure.Provisioning.AppService.SiteConfigProperties with get, set" Usage="Azure.Provisioning.AppService.WebSiteSlot.SiteConfig" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.SiteConfigProperties&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.SiteConfigProperties</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -1268,18 +1290,18 @@
       </Docs>
     </Member>
     <Member MemberName="SlotSwapStatus">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.SlotSwapStatus&gt; SlotSwapStatus { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.SlotSwapStatus&gt; SlotSwapStatus" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.SlotSwapStatus SlotSwapStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.SlotSwapStatus SlotSwapStatus" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteSlot.SlotSwapStatus" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SlotSwapStatus As BicepValue(Of SlotSwapStatus)" />
-      <MemberSignature Language="F#" Value="member this.SlotSwapStatus : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.SlotSwapStatus&gt;" Usage="Azure.Provisioning.AppService.WebSiteSlot.SlotSwapStatus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SlotSwapStatus As SlotSwapStatus" />
+      <MemberSignature Language="F#" Value="member this.SlotSwapStatus : Azure.Provisioning.AppService.SlotSwapStatus" Usage="Azure.Provisioning.AppService.WebSiteSlot.SlotSwapStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.SlotSwapStatus&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.SlotSwapStatus</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -1334,18 +1356,18 @@
       </Docs>
     </Member>
     <Member MemberName="SystemData">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt; SystemData { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.SystemData&gt; SystemData" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.WebSiteSlot.SystemData" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As BicepValue(Of SystemData)" />
-      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;" Usage="Azure.Provisioning.AppService.WebSiteSlot.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.AppService.WebSiteSlot.SystemData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

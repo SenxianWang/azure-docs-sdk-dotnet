@@ -1,15 +1,15 @@
 <Type Name="AppServiceCertificateOrder" FullName="Azure.Provisioning.AppService.AppServiceCertificateOrder">
-  <TypeSignature Language="C#" Value="public class AppServiceCertificateOrder : Azure.Provisioning.Primitives.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AppServiceCertificateOrder extends Azure.Provisioning.Primitives.Resource" />
+  <TypeSignature Language="C#" Value="public class AppServiceCertificateOrder : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AppServiceCertificateOrder extends Azure.Provisioning.Primitives.ProvisionableResource" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.AppService.AppServiceCertificateOrder" />
-  <TypeSignature Language="VB.NET" Value="Public Class AppServiceCertificateOrder&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type AppServiceCertificateOrder = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class AppServiceCertificateOrder&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type AppServiceCertificateOrder = class&#xA;    inherit ProvisionableResource" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.Resource</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -20,22 +20,22 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AppServiceCertificateOrder (string identifierName, string? resourceVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identifierName, string resourceVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public AppServiceCertificateOrder (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppService.AppServiceCertificateOrder.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (identifierName As String, Optional resourceVersion As String = Nothing)" />
-      <MemberSignature Language="F#" Value="new Azure.Provisioning.AppService.AppServiceCertificateOrder : string * string -&gt; Azure.Provisioning.AppService.AppServiceCertificateOrder" Usage="new Azure.Provisioning.AppService.AppServiceCertificateOrder (identifierName, resourceVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.AppService.AppServiceCertificateOrder : string * string -&gt; Azure.Provisioning.AppService.AppServiceCertificateOrder" Usage="new Azure.Provisioning.AppService.AppServiceCertificateOrder (bicepIdentifier, resourceVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="identifierName" Type="System.String" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
         <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifierName">
+        <param name="bicepIdentifier">
             The the Bicep identifier name of the AppServiceCertificateOrder
             resource.  This can be used to refer to the resource in expressions,
             but is not the Azure name of the resource.  This value can contain
@@ -94,18 +94,18 @@
       </Docs>
     </Member>
     <Member MemberName="Contact">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.CertificateOrderContact&gt; Contact { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.CertificateOrderContact&gt; Contact" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.CertificateOrderContact Contact { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.CertificateOrderContact Contact" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.AppServiceCertificateOrder.Contact" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contact As BicepValue(Of CertificateOrderContact)" />
-      <MemberSignature Language="F#" Value="member this.Contact : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.CertificateOrderContact&gt;" Usage="Azure.Provisioning.AppService.AppServiceCertificateOrder.Contact" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contact As CertificateOrderContact" />
+      <MemberSignature Language="F#" Value="member this.Contact : Azure.Provisioning.AppService.CertificateOrderContact" Usage="Azure.Provisioning.AppService.AppServiceCertificateOrder.Contact" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.CertificateOrderContact&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.CertificateOrderContact</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -134,6 +134,28 @@
             Last CSR that was created for this order.
             </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppService.AppServiceCertificateOrder.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="appServiceCertificateOrder.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of AppServiceCertificateOrder.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,11 +226,11 @@
       </Docs>
     </Member>
     <Member MemberName="FromExisting">
-      <MemberSignature Language="C#" Value="public static Azure.Provisioning.AppService.AppServiceCertificateOrder FromExisting (string identifierName, string? resourceVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.AppService.AppServiceCertificateOrder FromExisting(string identifierName, string resourceVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.AppService.AppServiceCertificateOrder FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.AppService.AppServiceCertificateOrder FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppService.AppServiceCertificateOrder.FromExisting(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (identifierName As String, Optional resourceVersion As String = Nothing) As AppServiceCertificateOrder" />
-      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.AppService.AppServiceCertificateOrder" Usage="Azure.Provisioning.AppService.AppServiceCertificateOrder.FromExisting (identifierName, resourceVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As AppServiceCertificateOrder" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.AppService.AppServiceCertificateOrder" Usage="Azure.Provisioning.AppService.AppServiceCertificateOrder.FromExisting (bicepIdentifier, resourceVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
@@ -218,11 +240,11 @@
         <ReturnType>Azure.Provisioning.AppService.AppServiceCertificateOrder</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="identifierName" Type="System.String" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
         <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifierName">
+        <param name="bicepIdentifier">
             The the Bicep identifier name of the AppServiceCertificateOrder
             resource.  This can be used to refer to the resource in expressions,
             but is not the Azure name of the resource.  This value can contain
@@ -259,18 +281,18 @@
       </Docs>
     </Member>
     <Member MemberName="Intermediate">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceCertificateDetails&gt; Intermediate { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.AppServiceCertificateDetails&gt; Intermediate" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.AppServiceCertificateDetails Intermediate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.AppServiceCertificateDetails Intermediate" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.AppServiceCertificateOrder.Intermediate" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Intermediate As BicepValue(Of AppServiceCertificateDetails)" />
-      <MemberSignature Language="F#" Value="member this.Intermediate : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceCertificateDetails&gt;" Usage="Azure.Provisioning.AppService.AppServiceCertificateOrder.Intermediate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Intermediate As AppServiceCertificateDetails" />
+      <MemberSignature Language="F#" Value="member this.Intermediate : Azure.Provisioning.AppService.AppServiceCertificateDetails" Usage="Azure.Provisioning.AppService.AppServiceCertificateOrder.Intermediate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceCertificateDetails&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.AppServiceCertificateDetails</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -504,18 +526,18 @@
       </Docs>
     </Member>
     <Member MemberName="Root">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceCertificateDetails&gt; Root { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.AppServiceCertificateDetails&gt; Root" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.AppServiceCertificateDetails Root { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.AppServiceCertificateDetails Root" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.AppServiceCertificateOrder.Root" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Root As BicepValue(Of AppServiceCertificateDetails)" />
-      <MemberSignature Language="F#" Value="member this.Root : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceCertificateDetails&gt;" Usage="Azure.Provisioning.AppService.AppServiceCertificateOrder.Root" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Root As AppServiceCertificateDetails" />
+      <MemberSignature Language="F#" Value="member this.Root : Azure.Provisioning.AppService.AppServiceCertificateDetails" Usage="Azure.Provisioning.AppService.AppServiceCertificateOrder.Root" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceCertificateDetails&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.AppServiceCertificateDetails</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -548,18 +570,18 @@
       </Docs>
     </Member>
     <Member MemberName="SignedCertificate">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceCertificateDetails&gt; SignedCertificate { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.AppServiceCertificateDetails&gt; SignedCertificate" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.AppServiceCertificateDetails SignedCertificate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.AppServiceCertificateDetails SignedCertificate" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.AppServiceCertificateOrder.SignedCertificate" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignedCertificate As BicepValue(Of AppServiceCertificateDetails)" />
-      <MemberSignature Language="F#" Value="member this.SignedCertificate : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceCertificateDetails&gt;" Usage="Azure.Provisioning.AppService.AppServiceCertificateOrder.SignedCertificate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignedCertificate As AppServiceCertificateDetails" />
+      <MemberSignature Language="F#" Value="member this.SignedCertificate : Azure.Provisioning.AppService.AppServiceCertificateDetails" Usage="Azure.Provisioning.AppService.AppServiceCertificateOrder.SignedCertificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceCertificateDetails&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.AppServiceCertificateDetails</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -592,18 +614,18 @@
       </Docs>
     </Member>
     <Member MemberName="SystemData">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt; SystemData { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.SystemData&gt; SystemData" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.AppServiceCertificateOrder.SystemData" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As BicepValue(Of SystemData)" />
-      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;" Usage="Azure.Provisioning.AppService.AppServiceCertificateOrder.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.AppService.AppServiceCertificateOrder.SystemData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

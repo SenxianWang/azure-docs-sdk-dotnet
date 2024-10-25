@@ -1,15 +1,15 @@
 <Type Name="ContainerAppProbe" FullName="Azure.Provisioning.AppContainers.ContainerAppProbe">
-  <TypeSignature Language="C#" Value="public class ContainerAppProbe : Azure.Provisioning.Primitives.ProvisioningConstruct" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerAppProbe extends Azure.Provisioning.Primitives.ProvisioningConstruct" />
+  <TypeSignature Language="C#" Value="public class ContainerAppProbe : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerAppProbe extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.AppContainers.ContainerAppProbe" />
-  <TypeSignature Language="VB.NET" Value="Public Class ContainerAppProbe&#xA;Inherits ProvisioningConstruct" />
-  <TypeSignature Language="F#" Value="type ContainerAppProbe = class&#xA;    inherit ProvisioningConstruct" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContainerAppProbe&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type ContainerAppProbe = class&#xA;    inherit ProvisionableConstruct" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.ProvisioningConstruct</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -34,6 +34,28 @@
       <Docs>
         <summary>
             Creates a new ContainerAppProbe.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppContainers.ContainerAppProbe.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="containerAppProbe.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of ContainerAppProbe.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,18 +85,18 @@
       </Docs>
     </Member>
     <Member MemberName="HttpGet">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppHttpRequestInfo&gt; HttpGet { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppContainers.ContainerAppHttpRequestInfo&gt; HttpGet" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppContainers.ContainerAppHttpRequestInfo HttpGet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppContainers.ContainerAppHttpRequestInfo HttpGet" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppContainers.ContainerAppProbe.HttpGet" />
-      <MemberSignature Language="VB.NET" Value="Public Property HttpGet As BicepValue(Of ContainerAppHttpRequestInfo)" />
-      <MemberSignature Language="F#" Value="member this.HttpGet : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppHttpRequestInfo&gt; with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppProbe.HttpGet" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpGet As ContainerAppHttpRequestInfo" />
+      <MemberSignature Language="F#" Value="member this.HttpGet : Azure.Provisioning.AppContainers.ContainerAppHttpRequestInfo with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppProbe.HttpGet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppHttpRequestInfo&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppContainers.ContainerAppHttpRequestInfo</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -177,18 +199,18 @@
       </Docs>
     </Member>
     <Member MemberName="TcpSocket">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppTcpSocketRequestInfo&gt; TcpSocket { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppContainers.ContainerAppTcpSocketRequestInfo&gt; TcpSocket" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppContainers.ContainerAppTcpSocketRequestInfo TcpSocket { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppContainers.ContainerAppTcpSocketRequestInfo TcpSocket" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppContainers.ContainerAppProbe.TcpSocket" />
-      <MemberSignature Language="VB.NET" Value="Public Property TcpSocket As BicepValue(Of ContainerAppTcpSocketRequestInfo)" />
-      <MemberSignature Language="F#" Value="member this.TcpSocket : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppTcpSocketRequestInfo&gt; with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppProbe.TcpSocket" />
+      <MemberSignature Language="VB.NET" Value="Public Property TcpSocket As ContainerAppTcpSocketRequestInfo" />
+      <MemberSignature Language="F#" Value="member this.TcpSocket : Azure.Provisioning.AppContainers.ContainerAppTcpSocketRequestInfo with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppProbe.TcpSocket" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppTcpSocketRequestInfo&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppContainers.ContainerAppTcpSocketRequestInfo</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

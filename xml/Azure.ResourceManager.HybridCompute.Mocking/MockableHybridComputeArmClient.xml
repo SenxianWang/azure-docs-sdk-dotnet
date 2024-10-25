@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
@@ -26,6 +27,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,6 +45,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputeExtensionValueResource</ReturnType>
@@ -60,33 +63,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetHybridComputeGatewayResource">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource GetHybridComputeGatewayResource (Azure.Core.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource GetHybridComputeGatewayResource(class Azure.Core.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.HybridCompute.Mocking.MockableHybridComputeArmClient.GetHybridComputeGatewayResource(Azure.Core.ResourceIdentifier)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHybridComputeGatewayResource (id As ResourceIdentifier) As HybridComputeGatewayResource" />
-      <MemberSignature Language="F#" Value="abstract member GetHybridComputeGatewayResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource&#xA;override this.GetHybridComputeGatewayResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource" Usage="mockableHybridComputeArmClient.GetHybridComputeGatewayResource id" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource.CreateResourceIdentifier(System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.HybridCompute.HybridComputeGatewayResource" /> object. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetHybridComputeLicenseProfileResource">
       <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.HybridCompute.HybridComputeLicenseProfileResource GetHybridComputeLicenseProfileResource (Azure.Core.ResourceIdentifier id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.HybridCompute.HybridComputeLicenseProfileResource GetHybridComputeLicenseProfileResource(class Azure.Core.ResourceIdentifier id) cil managed" />
@@ -97,12 +73,13 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputeLicenseProfileResource</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" />
       </Parameters>
       <Docs>
         <param name="id"> The resource ID of the resource to get. </param>
@@ -124,6 +101,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputeLicenseResource</ReturnType>
@@ -151,6 +129,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputeMachineExtensionResource</ReturnType>
@@ -178,6 +157,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputeMachineResource</ReturnType>
@@ -205,6 +185,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputePrivateEndpointConnectionResource</ReturnType>
@@ -232,6 +213,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputePrivateLinkResource</ReturnType>
@@ -259,6 +241,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.HybridComputePrivateLinkScopeResource</ReturnType>
@@ -276,33 +259,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetMachineRunCommandResource">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.HybridCompute.MachineRunCommandResource GetMachineRunCommandResource (Azure.Core.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.HybridCompute.MachineRunCommandResource GetMachineRunCommandResource(class Azure.Core.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.HybridCompute.Mocking.MockableHybridComputeArmClient.GetMachineRunCommandResource(Azure.Core.ResourceIdentifier)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMachineRunCommandResource (id As ResourceIdentifier) As MachineRunCommandResource" />
-      <MemberSignature Language="F#" Value="abstract member GetMachineRunCommandResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.HybridCompute.MachineRunCommandResource&#xA;override this.GetMachineRunCommandResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.HybridCompute.MachineRunCommandResource" Usage="mockableHybridComputeArmClient.GetMachineRunCommandResource id" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.HybridCompute.MachineRunCommandResource</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.HybridCompute.MachineRunCommandResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.HybridCompute.MachineRunCommandResource.CreateResourceIdentifier(System.String,System.String,System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.HybridCompute.MachineRunCommandResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.HybridCompute.MachineRunCommandResource" /> object. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetNetworkSecurityPerimeterConfigurationResource">
       <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.HybridCompute.NetworkSecurityPerimeterConfigurationResource GetNetworkSecurityPerimeterConfigurationResource (Azure.Core.ResourceIdentifier id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.HybridCompute.NetworkSecurityPerimeterConfigurationResource GetNetworkSecurityPerimeterConfigurationResource(class Azure.Core.ResourceIdentifier id) cil managed" />
@@ -313,6 +269,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.HybridCompute</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.HybridCompute.NetworkSecurityPerimeterConfigurationResource</ReturnType>

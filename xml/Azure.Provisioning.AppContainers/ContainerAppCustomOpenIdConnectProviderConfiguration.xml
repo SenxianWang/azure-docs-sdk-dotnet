@@ -1,15 +1,15 @@
 <Type Name="ContainerAppCustomOpenIdConnectProviderConfiguration" FullName="Azure.Provisioning.AppContainers.ContainerAppCustomOpenIdConnectProviderConfiguration">
-  <TypeSignature Language="C#" Value="public class ContainerAppCustomOpenIdConnectProviderConfiguration : Azure.Provisioning.Primitives.ProvisioningConstruct" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerAppCustomOpenIdConnectProviderConfiguration extends Azure.Provisioning.Primitives.ProvisioningConstruct" />
+  <TypeSignature Language="C#" Value="public class ContainerAppCustomOpenIdConnectProviderConfiguration : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerAppCustomOpenIdConnectProviderConfiguration extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.AppContainers.ContainerAppCustomOpenIdConnectProviderConfiguration" />
-  <TypeSignature Language="VB.NET" Value="Public Class ContainerAppCustomOpenIdConnectProviderConfiguration&#xA;Inherits ProvisioningConstruct" />
-  <TypeSignature Language="F#" Value="type ContainerAppCustomOpenIdConnectProviderConfiguration = class&#xA;    inherit ProvisioningConstruct" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContainerAppCustomOpenIdConnectProviderConfiguration&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type ContainerAppCustomOpenIdConnectProviderConfiguration = class&#xA;    inherit ProvisionableConstruct" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.ProvisioningConstruct</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -33,6 +33,29 @@
       <Docs>
         <summary>
             Creates a new ContainerAppCustomOpenIdConnectProviderConfiguration.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppContainers.ContainerAppCustomOpenIdConnectProviderConfiguration.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="containerAppCustomOpenIdConnectProviderConfiguration.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of
+            ContainerAppCustomOpenIdConnectProviderConfiguration.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,18 +84,18 @@
       </Docs>
     </Member>
     <Member MemberName="Login">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppOpenIdConnectLogin&gt; Login { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppContainers.ContainerAppOpenIdConnectLogin&gt; Login" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppContainers.ContainerAppOpenIdConnectLogin Login { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppContainers.ContainerAppOpenIdConnectLogin Login" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppContainers.ContainerAppCustomOpenIdConnectProviderConfiguration.Login" />
-      <MemberSignature Language="VB.NET" Value="Public Property Login As BicepValue(Of ContainerAppOpenIdConnectLogin)" />
-      <MemberSignature Language="F#" Value="member this.Login : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppOpenIdConnectLogin&gt; with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppCustomOpenIdConnectProviderConfiguration.Login" />
+      <MemberSignature Language="VB.NET" Value="Public Property Login As ContainerAppOpenIdConnectLogin" />
+      <MemberSignature Language="F#" Value="member this.Login : Azure.Provisioning.AppContainers.ContainerAppOpenIdConnectLogin with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppCustomOpenIdConnectProviderConfiguration.Login" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppOpenIdConnectLogin&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppContainers.ContainerAppOpenIdConnectLogin</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -84,18 +107,18 @@
       </Docs>
     </Member>
     <Member MemberName="Registration">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppOpenIdConnectRegistration&gt; Registration { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppContainers.ContainerAppOpenIdConnectRegistration&gt; Registration" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppContainers.ContainerAppOpenIdConnectRegistration Registration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppContainers.ContainerAppOpenIdConnectRegistration Registration" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppContainers.ContainerAppCustomOpenIdConnectProviderConfiguration.Registration" />
-      <MemberSignature Language="VB.NET" Value="Public Property Registration As BicepValue(Of ContainerAppOpenIdConnectRegistration)" />
-      <MemberSignature Language="F#" Value="member this.Registration : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppOpenIdConnectRegistration&gt; with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppCustomOpenIdConnectProviderConfiguration.Registration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Registration As ContainerAppOpenIdConnectRegistration" />
+      <MemberSignature Language="F#" Value="member this.Registration : Azure.Provisioning.AppContainers.ContainerAppOpenIdConnectRegistration with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppCustomOpenIdConnectProviderConfiguration.Registration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppOpenIdConnectRegistration&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppContainers.ContainerAppOpenIdConnectRegistration</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

@@ -1,15 +1,15 @@
 <Type Name="PostgreSqlServer" FullName="Azure.Provisioning.PostgreSql.PostgreSqlServer">
-  <TypeSignature Language="C#" Value="public class PostgreSqlServer : Azure.Provisioning.Primitives.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PostgreSqlServer extends Azure.Provisioning.Primitives.Resource" />
+  <TypeSignature Language="C#" Value="public class PostgreSqlServer : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PostgreSqlServer extends Azure.Provisioning.Primitives.ProvisionableResource" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.PostgreSql.PostgreSqlServer" />
-  <TypeSignature Language="VB.NET" Value="Public Class PostgreSqlServer&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type PostgreSqlServer = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class PostgreSqlServer&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type PostgreSqlServer = class&#xA;    inherit ProvisionableResource" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.Resource</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -20,22 +20,22 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PostgreSqlServer (string identifierName, string? resourceVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identifierName, string resourceVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public PostgreSqlServer (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.PostgreSql.PostgreSqlServer.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (identifierName As String, Optional resourceVersion As String = Nothing)" />
-      <MemberSignature Language="F#" Value="new Azure.Provisioning.PostgreSql.PostgreSqlServer : string * string -&gt; Azure.Provisioning.PostgreSql.PostgreSqlServer" Usage="new Azure.Provisioning.PostgreSql.PostgreSqlServer (identifierName, resourceVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.PostgreSql.PostgreSqlServer : string * string -&gt; Azure.Provisioning.PostgreSql.PostgreSqlServer" Usage="new Azure.Provisioning.PostgreSql.PostgreSqlServer (bicepIdentifier, resourceVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="identifierName" Type="System.String" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
         <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifierName">
+        <param name="bicepIdentifier">
             The the Bicep identifier name of the PostgreSqlServer resource.  This
             can be used to refer to the resource in expressions, but is not the
             Azure name of the resource.  This value can contain letters, numbers,
@@ -94,6 +94,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.PostgreSql.PostgreSqlServer.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="postgreSqlServer.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of PostgreSqlServer.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="EarliestRestoreOn">
       <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;DateTimeOffset&gt; EarliestRestoreOn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;valuetype System.DateTimeOffset&gt; EarliestRestoreOn" />
@@ -117,11 +139,11 @@
       </Docs>
     </Member>
     <Member MemberName="FromExisting">
-      <MemberSignature Language="C#" Value="public static Azure.Provisioning.PostgreSql.PostgreSqlServer FromExisting (string identifierName, string? resourceVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.PostgreSql.PostgreSqlServer FromExisting(string identifierName, string resourceVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.PostgreSql.PostgreSqlServer FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.PostgreSql.PostgreSqlServer FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.PostgreSql.PostgreSqlServer.FromExisting(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (identifierName As String, Optional resourceVersion As String = Nothing) As PostgreSqlServer" />
-      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.PostgreSql.PostgreSqlServer" Usage="Azure.Provisioning.PostgreSql.PostgreSqlServer.FromExisting (identifierName, resourceVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As PostgreSqlServer" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.PostgreSql.PostgreSqlServer" Usage="Azure.Provisioning.PostgreSql.PostgreSqlServer.FromExisting (bicepIdentifier, resourceVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
@@ -131,11 +153,11 @@
         <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlServer</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="identifierName" Type="System.String" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
         <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifierName">
+        <param name="bicepIdentifier">
             The the Bicep identifier name of the PostgreSqlServer resource.  This
             can be used to refer to the resource in expressions, but is not the
             Azure name of the resource.  This value can contain letters, numbers,
@@ -223,18 +245,18 @@
       </Docs>
     </Member>
     <Member MemberName="Identity">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ManagedServiceIdentity&gt; Identity { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.ManagedServiceIdentity&gt; Identity" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.ManagedServiceIdentity Identity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.ManagedServiceIdentity Identity" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.PostgreSql.PostgreSqlServer.Identity" />
-      <MemberSignature Language="VB.NET" Value="Public Property Identity As BicepValue(Of ManagedServiceIdentity)" />
-      <MemberSignature Language="F#" Value="member this.Identity : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ManagedServiceIdentity&gt; with get, set" Usage="Azure.Provisioning.PostgreSql.PostgreSqlServer.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Identity As ManagedServiceIdentity" />
+      <MemberSignature Language="F#" Value="member this.Identity : Azure.Provisioning.Resources.ManagedServiceIdentity with get, set" Usage="Azure.Provisioning.PostgreSql.PostgreSqlServer.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ManagedServiceIdentity&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.ManagedServiceIdentity</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -378,18 +400,18 @@
       </Docs>
     </Member>
     <Member MemberName="Properties">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlServerPropertiesForCreate&gt; Properties { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.PostgreSql.PostgreSqlServerPropertiesForCreate&gt; Properties" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.PostgreSql.PostgreSqlServerPropertiesForCreate Properties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.PostgreSql.PostgreSqlServerPropertiesForCreate Properties" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.PostgreSql.PostgreSqlServer.Properties" />
-      <MemberSignature Language="VB.NET" Value="Public Property Properties As BicepValue(Of PostgreSqlServerPropertiesForCreate)" />
-      <MemberSignature Language="F#" Value="member this.Properties : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlServerPropertiesForCreate&gt; with get, set" Usage="Azure.Provisioning.PostgreSql.PostgreSqlServer.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Property Properties As PostgreSqlServerPropertiesForCreate" />
+      <MemberSignature Language="F#" Value="member this.Properties : Azure.Provisioning.PostgreSql.PostgreSqlServerPropertiesForCreate with get, set" Usage="Azure.Provisioning.PostgreSql.PostgreSqlServer.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlServerPropertiesForCreate&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlServerPropertiesForCreate</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -478,18 +500,18 @@
       </Docs>
     </Member>
     <Member MemberName="Sku">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlSku&gt; Sku { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.PostgreSql.PostgreSqlSku&gt; Sku" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.PostgreSql.PostgreSqlSku Sku { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.PostgreSql.PostgreSqlSku Sku" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.PostgreSql.PostgreSqlServer.Sku" />
-      <MemberSignature Language="VB.NET" Value="Public Property Sku As BicepValue(Of PostgreSqlSku)" />
-      <MemberSignature Language="F#" Value="member this.Sku : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlSku&gt; with get, set" Usage="Azure.Provisioning.PostgreSql.PostgreSqlServer.Sku" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sku As PostgreSqlSku" />
+      <MemberSignature Language="F#" Value="member this.Sku : Azure.Provisioning.PostgreSql.PostgreSqlSku with get, set" Usage="Azure.Provisioning.PostgreSql.PostgreSqlServer.Sku" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlSku&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlSku</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -522,18 +544,18 @@
       </Docs>
     </Member>
     <Member MemberName="StorageProfile">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlStorageProfile&gt; StorageProfile { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.PostgreSql.PostgreSqlStorageProfile&gt; StorageProfile" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.PostgreSql.PostgreSqlStorageProfile StorageProfile { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.PostgreSql.PostgreSqlStorageProfile StorageProfile" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.PostgreSql.PostgreSqlServer.StorageProfile" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StorageProfile As BicepValue(Of PostgreSqlStorageProfile)" />
-      <MemberSignature Language="F#" Value="member this.StorageProfile : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlStorageProfile&gt;" Usage="Azure.Provisioning.PostgreSql.PostgreSqlServer.StorageProfile" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StorageProfile As PostgreSqlStorageProfile" />
+      <MemberSignature Language="F#" Value="member this.StorageProfile : Azure.Provisioning.PostgreSql.PostgreSqlStorageProfile" Usage="Azure.Provisioning.PostgreSql.PostgreSqlServer.StorageProfile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.PostgreSql.PostgreSqlStorageProfile&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.PostgreSql.PostgreSqlStorageProfile</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -544,18 +566,18 @@
       </Docs>
     </Member>
     <Member MemberName="SystemData">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt; SystemData { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.SystemData&gt; SystemData" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.PostgreSql.PostgreSqlServer.SystemData" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As BicepValue(Of SystemData)" />
-      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;" Usage="Azure.Provisioning.PostgreSql.PostgreSqlServer.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.PostgreSql.PostgreSqlServer.SystemData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.PostgreSql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

@@ -1,15 +1,15 @@
 <Type Name="CosmosDBSqlContainerResourceInfo" FullName="Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo">
-  <TypeSignature Language="C#" Value="public class CosmosDBSqlContainerResourceInfo : Azure.Provisioning.Primitives.ProvisioningConstruct" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CosmosDBSqlContainerResourceInfo extends Azure.Provisioning.Primitives.ProvisioningConstruct" />
+  <TypeSignature Language="C#" Value="public class CosmosDBSqlContainerResourceInfo : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CosmosDBSqlContainerResourceInfo extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo" />
-  <TypeSignature Language="VB.NET" Value="Public Class CosmosDBSqlContainerResourceInfo&#xA;Inherits ProvisioningConstruct" />
-  <TypeSignature Language="F#" Value="type CosmosDBSqlContainerResourceInfo = class&#xA;    inherit ProvisioningConstruct" />
+  <TypeSignature Language="VB.NET" Value="Public Class CosmosDBSqlContainerResourceInfo&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type CosmosDBSqlContainerResourceInfo = class&#xA;    inherit ProvisionableConstruct" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.CosmosDB</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.ProvisioningConstruct</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -60,18 +60,18 @@
       </Docs>
     </Member>
     <Member MemberName="ClientEncryptionPolicy">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.CosmosDBClientEncryptionPolicy&gt; ClientEncryptionPolicy { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.CosmosDB.CosmosDBClientEncryptionPolicy&gt; ClientEncryptionPolicy" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.CosmosDB.CosmosDBClientEncryptionPolicy ClientEncryptionPolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.CosmosDB.CosmosDBClientEncryptionPolicy ClientEncryptionPolicy" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.ClientEncryptionPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public Property ClientEncryptionPolicy As BicepValue(Of CosmosDBClientEncryptionPolicy)" />
-      <MemberSignature Language="F#" Value="member this.ClientEncryptionPolicy : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.CosmosDBClientEncryptionPolicy&gt; with get, set" Usage="Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.ClientEncryptionPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientEncryptionPolicy As CosmosDBClientEncryptionPolicy" />
+      <MemberSignature Language="F#" Value="member this.ClientEncryptionPolicy : Azure.Provisioning.CosmosDB.CosmosDBClientEncryptionPolicy with get, set" Usage="Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.ClientEncryptionPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.CosmosDBClientEncryptionPolicy&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.CosmosDB.CosmosDBClientEncryptionPolicy</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -104,18 +104,18 @@
       </Docs>
     </Member>
     <Member MemberName="ConflictResolutionPolicy">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.ConflictResolutionPolicy&gt; ConflictResolutionPolicy { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.CosmosDB.ConflictResolutionPolicy&gt; ConflictResolutionPolicy" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.CosmosDB.ConflictResolutionPolicy ConflictResolutionPolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.CosmosDB.ConflictResolutionPolicy ConflictResolutionPolicy" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.ConflictResolutionPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public Property ConflictResolutionPolicy As BicepValue(Of ConflictResolutionPolicy)" />
-      <MemberSignature Language="F#" Value="member this.ConflictResolutionPolicy : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.ConflictResolutionPolicy&gt; with get, set" Usage="Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.ConflictResolutionPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConflictResolutionPolicy As ConflictResolutionPolicy" />
+      <MemberSignature Language="F#" Value="member this.ConflictResolutionPolicy : Azure.Provisioning.CosmosDB.ConflictResolutionPolicy with get, set" Usage="Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.ConflictResolutionPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.ConflictResolutionPolicy&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.CosmosDB.ConflictResolutionPolicy</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -191,19 +191,42 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="cosmosDBSqlContainerResourceInfo.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of
+            CosmosDBSqlContainerResourceInfo.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IndexingPolicy">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.CosmosDBIndexingPolicy&gt; IndexingPolicy { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.CosmosDB.CosmosDBIndexingPolicy&gt; IndexingPolicy" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.CosmosDB.CosmosDBIndexingPolicy IndexingPolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.CosmosDB.CosmosDBIndexingPolicy IndexingPolicy" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.IndexingPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public Property IndexingPolicy As BicepValue(Of CosmosDBIndexingPolicy)" />
-      <MemberSignature Language="F#" Value="member this.IndexingPolicy : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.CosmosDBIndexingPolicy&gt; with get, set" Usage="Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.IndexingPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndexingPolicy As CosmosDBIndexingPolicy" />
+      <MemberSignature Language="F#" Value="member this.IndexingPolicy : Azure.Provisioning.CosmosDB.CosmosDBIndexingPolicy with get, set" Usage="Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.IndexingPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.CosmosDBIndexingPolicy&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.CosmosDB.CosmosDBIndexingPolicy</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -215,18 +238,18 @@
       </Docs>
     </Member>
     <Member MemberName="MaterializedViewDefinition">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.MaterializedViewDefinition&gt; MaterializedViewDefinition { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.CosmosDB.MaterializedViewDefinition&gt; MaterializedViewDefinition" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.CosmosDB.MaterializedViewDefinition MaterializedViewDefinition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.CosmosDB.MaterializedViewDefinition MaterializedViewDefinition" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.MaterializedViewDefinition" />
-      <MemberSignature Language="VB.NET" Value="Public Property MaterializedViewDefinition As BicepValue(Of MaterializedViewDefinition)" />
-      <MemberSignature Language="F#" Value="member this.MaterializedViewDefinition : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.MaterializedViewDefinition&gt; with get, set" Usage="Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.MaterializedViewDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaterializedViewDefinition As MaterializedViewDefinition" />
+      <MemberSignature Language="F#" Value="member this.MaterializedViewDefinition : Azure.Provisioning.CosmosDB.MaterializedViewDefinition with get, set" Usage="Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.MaterializedViewDefinition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.MaterializedViewDefinition&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.CosmosDB.MaterializedViewDefinition</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -238,18 +261,18 @@
       </Docs>
     </Member>
     <Member MemberName="PartitionKey">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.CosmosDBContainerPartitionKey&gt; PartitionKey { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.CosmosDB.CosmosDBContainerPartitionKey&gt; PartitionKey" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.CosmosDB.CosmosDBContainerPartitionKey PartitionKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.CosmosDB.CosmosDBContainerPartitionKey PartitionKey" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.PartitionKey" />
-      <MemberSignature Language="VB.NET" Value="Public Property PartitionKey As BicepValue(Of CosmosDBContainerPartitionKey)" />
-      <MemberSignature Language="F#" Value="member this.PartitionKey : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.CosmosDBContainerPartitionKey&gt; with get, set" Usage="Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.PartitionKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property PartitionKey As CosmosDBContainerPartitionKey" />
+      <MemberSignature Language="F#" Value="member this.PartitionKey : Azure.Provisioning.CosmosDB.CosmosDBContainerPartitionKey with get, set" Usage="Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.PartitionKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.CosmosDBContainerPartitionKey&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.CosmosDB.CosmosDBContainerPartitionKey</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -261,18 +284,18 @@
       </Docs>
     </Member>
     <Member MemberName="RestoreParameters">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.ResourceRestoreParameters&gt; RestoreParameters { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.CosmosDB.ResourceRestoreParameters&gt; RestoreParameters" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.CosmosDB.ResourceRestoreParameters RestoreParameters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.CosmosDB.ResourceRestoreParameters RestoreParameters" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.RestoreParameters" />
-      <MemberSignature Language="VB.NET" Value="Public Property RestoreParameters As BicepValue(Of ResourceRestoreParameters)" />
-      <MemberSignature Language="F#" Value="member this.RestoreParameters : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.ResourceRestoreParameters&gt; with get, set" Usage="Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.RestoreParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property RestoreParameters As ResourceRestoreParameters" />
+      <MemberSignature Language="F#" Value="member this.RestoreParameters : Azure.Provisioning.CosmosDB.ResourceRestoreParameters with get, set" Usage="Azure.Provisioning.CosmosDB.CosmosDBSqlContainerResourceInfo.RestoreParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.ResourceRestoreParameters&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.CosmosDB.ResourceRestoreParameters</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

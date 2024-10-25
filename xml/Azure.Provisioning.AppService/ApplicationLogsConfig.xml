@@ -1,15 +1,15 @@
 <Type Name="ApplicationLogsConfig" FullName="Azure.Provisioning.AppService.ApplicationLogsConfig">
-  <TypeSignature Language="C#" Value="public class ApplicationLogsConfig : Azure.Provisioning.Primitives.ProvisioningConstruct" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApplicationLogsConfig extends Azure.Provisioning.Primitives.ProvisioningConstruct" />
+  <TypeSignature Language="C#" Value="public class ApplicationLogsConfig : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApplicationLogsConfig extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.AppService.ApplicationLogsConfig" />
-  <TypeSignature Language="VB.NET" Value="Public Class ApplicationLogsConfig&#xA;Inherits ProvisioningConstruct" />
-  <TypeSignature Language="F#" Value="type ApplicationLogsConfig = class&#xA;    inherit ProvisioningConstruct" />
+  <TypeSignature Language="VB.NET" Value="Public Class ApplicationLogsConfig&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type ApplicationLogsConfig = class&#xA;    inherit ProvisionableConstruct" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.ProvisioningConstruct</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -38,18 +38,18 @@
       </Docs>
     </Member>
     <Member MemberName="AzureBlobStorage">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceBlobStorageApplicationLogsConfig&gt; AzureBlobStorage { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.AppServiceBlobStorageApplicationLogsConfig&gt; AzureBlobStorage" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.AppServiceBlobStorageApplicationLogsConfig AzureBlobStorage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.AppServiceBlobStorageApplicationLogsConfig AzureBlobStorage" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.ApplicationLogsConfig.AzureBlobStorage" />
-      <MemberSignature Language="VB.NET" Value="Public Property AzureBlobStorage As BicepValue(Of AppServiceBlobStorageApplicationLogsConfig)" />
-      <MemberSignature Language="F#" Value="member this.AzureBlobStorage : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceBlobStorageApplicationLogsConfig&gt; with get, set" Usage="Azure.Provisioning.AppService.ApplicationLogsConfig.AzureBlobStorage" />
+      <MemberSignature Language="VB.NET" Value="Public Property AzureBlobStorage As AppServiceBlobStorageApplicationLogsConfig" />
+      <MemberSignature Language="F#" Value="member this.AzureBlobStorage : Azure.Provisioning.AppService.AppServiceBlobStorageApplicationLogsConfig with get, set" Usage="Azure.Provisioning.AppService.ApplicationLogsConfig.AzureBlobStorage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceBlobStorageApplicationLogsConfig&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.AppServiceBlobStorageApplicationLogsConfig</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -60,24 +60,46 @@
       </Docs>
     </Member>
     <Member MemberName="AzureTableStorage">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceTableStorageApplicationLogsConfig&gt; AzureTableStorage { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppService.AppServiceTableStorageApplicationLogsConfig&gt; AzureTableStorage" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppService.AppServiceTableStorageApplicationLogsConfig AzureTableStorage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppService.AppServiceTableStorageApplicationLogsConfig AzureTableStorage" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppService.ApplicationLogsConfig.AzureTableStorage" />
-      <MemberSignature Language="VB.NET" Value="Public Property AzureTableStorage As BicepValue(Of AppServiceTableStorageApplicationLogsConfig)" />
-      <MemberSignature Language="F#" Value="member this.AzureTableStorage : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceTableStorageApplicationLogsConfig&gt; with get, set" Usage="Azure.Provisioning.AppService.ApplicationLogsConfig.AzureTableStorage" />
+      <MemberSignature Language="VB.NET" Value="Public Property AzureTableStorage As AppServiceTableStorageApplicationLogsConfig" />
+      <MemberSignature Language="F#" Value="member this.AzureTableStorage : Azure.Provisioning.AppService.AppServiceTableStorageApplicationLogsConfig with get, set" Usage="Azure.Provisioning.AppService.ApplicationLogsConfig.AzureTableStorage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppService.AppServiceTableStorageApplicationLogsConfig&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppService.AppServiceTableStorageApplicationLogsConfig</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
             Application logs to azure table storage configuration.
             </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppService.ApplicationLogsConfig.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="applicationLogsConfig.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.AppService</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of ApplicationLogsConfig.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,15 +1,15 @@
 <Type Name="ContainerAppAppleConfiguration" FullName="Azure.Provisioning.AppContainers.ContainerAppAppleConfiguration">
-  <TypeSignature Language="C#" Value="public class ContainerAppAppleConfiguration : Azure.Provisioning.Primitives.ProvisioningConstruct" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerAppAppleConfiguration extends Azure.Provisioning.Primitives.ProvisioningConstruct" />
+  <TypeSignature Language="C#" Value="public class ContainerAppAppleConfiguration : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerAppAppleConfiguration extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.AppContainers.ContainerAppAppleConfiguration" />
-  <TypeSignature Language="VB.NET" Value="Public Class ContainerAppAppleConfiguration&#xA;Inherits ProvisioningConstruct" />
-  <TypeSignature Language="F#" Value="type ContainerAppAppleConfiguration = class&#xA;    inherit ProvisioningConstruct" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContainerAppAppleConfiguration&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type ContainerAppAppleConfiguration = class&#xA;    inherit ProvisionableConstruct" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.ProvisioningConstruct</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -33,6 +33,29 @@
       <Docs>
         <summary>
             Creates a new ContainerAppAppleConfiguration.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.AppContainers.ContainerAppAppleConfiguration.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="containerAppAppleConfiguration.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of
+            ContainerAppAppleConfiguration.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,18 +107,18 @@
       </Docs>
     </Member>
     <Member MemberName="Registration">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppAppleRegistrationConfiguration&gt; Registration { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.AppContainers.ContainerAppAppleRegistrationConfiguration&gt; Registration" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.AppContainers.ContainerAppAppleRegistrationConfiguration Registration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.AppContainers.ContainerAppAppleRegistrationConfiguration Registration" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.AppContainers.ContainerAppAppleConfiguration.Registration" />
-      <MemberSignature Language="VB.NET" Value="Public Property Registration As BicepValue(Of ContainerAppAppleRegistrationConfiguration)" />
-      <MemberSignature Language="F#" Value="member this.Registration : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppAppleRegistrationConfiguration&gt; with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppAppleConfiguration.Registration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Registration As ContainerAppAppleRegistrationConfiguration" />
+      <MemberSignature Language="F#" Value="member this.Registration : Azure.Provisioning.AppContainers.ContainerAppAppleRegistrationConfiguration with get, set" Usage="Azure.Provisioning.AppContainers.ContainerAppAppleConfiguration.Registration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.AppContainers</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.AppContainers.ContainerAppAppleRegistrationConfiguration&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.AppContainers.ContainerAppAppleRegistrationConfiguration</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

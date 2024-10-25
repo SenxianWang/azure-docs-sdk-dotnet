@@ -1,15 +1,15 @@
 <Type Name="ContainerRegistryTriggerProperties" FullName="Azure.Provisioning.ContainerRegistry.ContainerRegistryTriggerProperties">
-  <TypeSignature Language="C#" Value="public class ContainerRegistryTriggerProperties : Azure.Provisioning.Primitives.ProvisioningConstruct" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerRegistryTriggerProperties extends Azure.Provisioning.Primitives.ProvisioningConstruct" />
+  <TypeSignature Language="C#" Value="public class ContainerRegistryTriggerProperties : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerRegistryTriggerProperties extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.ContainerRegistry.ContainerRegistryTriggerProperties" />
-  <TypeSignature Language="VB.NET" Value="Public Class ContainerRegistryTriggerProperties&#xA;Inherits ProvisioningConstruct" />
-  <TypeSignature Language="F#" Value="type ContainerRegistryTriggerProperties = class&#xA;    inherit ProvisioningConstruct" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContainerRegistryTriggerProperties&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type ContainerRegistryTriggerProperties = class&#xA;    inherit ProvisionableConstruct" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.ContainerRegistry</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.ProvisioningConstruct</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -38,24 +38,47 @@
       </Docs>
     </Member>
     <Member MemberName="BaseImageTrigger">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistryBaseImageTrigger&gt; BaseImageTrigger { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.ContainerRegistry.ContainerRegistryBaseImageTrigger&gt; BaseImageTrigger" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.ContainerRegistry.ContainerRegistryBaseImageTrigger BaseImageTrigger { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.ContainerRegistry.ContainerRegistryBaseImageTrigger BaseImageTrigger" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.ContainerRegistry.ContainerRegistryTriggerProperties.BaseImageTrigger" />
-      <MemberSignature Language="VB.NET" Value="Public Property BaseImageTrigger As BicepValue(Of ContainerRegistryBaseImageTrigger)" />
-      <MemberSignature Language="F#" Value="member this.BaseImageTrigger : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistryBaseImageTrigger&gt; with get, set" Usage="Azure.Provisioning.ContainerRegistry.ContainerRegistryTriggerProperties.BaseImageTrigger" />
+      <MemberSignature Language="VB.NET" Value="Public Property BaseImageTrigger As ContainerRegistryBaseImageTrigger" />
+      <MemberSignature Language="F#" Value="member this.BaseImageTrigger : Azure.Provisioning.ContainerRegistry.ContainerRegistryBaseImageTrigger with get, set" Usage="Azure.Provisioning.ContainerRegistry.ContainerRegistryTriggerProperties.BaseImageTrigger" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.ContainerRegistry</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.ContainerRegistry.ContainerRegistryBaseImageTrigger&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.ContainerRegistry.ContainerRegistryBaseImageTrigger</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
             The trigger based on base image dependencies.
             </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.ContainerRegistry.ContainerRegistryTriggerProperties.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="containerRegistryTriggerProperties.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.ContainerRegistry</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of
+            ContainerRegistryTriggerProperties.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

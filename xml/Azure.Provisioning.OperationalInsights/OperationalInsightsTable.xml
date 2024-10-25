@@ -1,15 +1,15 @@
 <Type Name="OperationalInsightsTable" FullName="Azure.Provisioning.OperationalInsights.OperationalInsightsTable">
-  <TypeSignature Language="C#" Value="public class OperationalInsightsTable : Azure.Provisioning.Primitives.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OperationalInsightsTable extends Azure.Provisioning.Primitives.Resource" />
+  <TypeSignature Language="C#" Value="public class OperationalInsightsTable : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OperationalInsightsTable extends Azure.Provisioning.Primitives.ProvisionableResource" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.OperationalInsights.OperationalInsightsTable" />
-  <TypeSignature Language="VB.NET" Value="Public Class OperationalInsightsTable&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type OperationalInsightsTable = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class OperationalInsightsTable&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type OperationalInsightsTable = class&#xA;    inherit ProvisionableResource" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.OperationalInsights</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.Resource</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -20,22 +20,22 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public OperationalInsightsTable (string identifierName, string? resourceVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identifierName, string resourceVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public OperationalInsightsTable (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.OperationalInsights.OperationalInsightsTable.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (identifierName As String, Optional resourceVersion As String = Nothing)" />
-      <MemberSignature Language="F#" Value="new Azure.Provisioning.OperationalInsights.OperationalInsightsTable : string * string -&gt; Azure.Provisioning.OperationalInsights.OperationalInsightsTable" Usage="new Azure.Provisioning.OperationalInsights.OperationalInsightsTable (identifierName, resourceVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.OperationalInsights.OperationalInsightsTable : string * string -&gt; Azure.Provisioning.OperationalInsights.OperationalInsightsTable" Usage="new Azure.Provisioning.OperationalInsights.OperationalInsightsTable (bicepIdentifier, resourceVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.OperationalInsights</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="identifierName" Type="System.String" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
         <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifierName">
+        <param name="bicepIdentifier">
             The the Bicep identifier name of the OperationalInsightsTable resource.
             This can be used to refer to the resource in expressions, but is not
             the Azure name of the resource.  This value can contain letters,
@@ -71,12 +71,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.OperationalInsights.OperationalInsightsTable.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="operationalInsightsTable.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.OperationalInsights</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of OperationalInsightsTable.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FromExisting">
-      <MemberSignature Language="C#" Value="public static Azure.Provisioning.OperationalInsights.OperationalInsightsTable FromExisting (string identifierName, string? resourceVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.OperationalInsights.OperationalInsightsTable FromExisting(string identifierName, string resourceVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.OperationalInsights.OperationalInsightsTable FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.OperationalInsights.OperationalInsightsTable FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.OperationalInsights.OperationalInsightsTable.FromExisting(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (identifierName As String, Optional resourceVersion As String = Nothing) As OperationalInsightsTable" />
-      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.OperationalInsights.OperationalInsightsTable" Usage="Azure.Provisioning.OperationalInsights.OperationalInsightsTable.FromExisting (identifierName, resourceVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As OperationalInsightsTable" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.OperationalInsights.OperationalInsightsTable" Usage="Azure.Provisioning.OperationalInsights.OperationalInsightsTable.FromExisting (bicepIdentifier, resourceVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.OperationalInsights</AssemblyName>
@@ -86,11 +108,11 @@
         <ReturnType>Azure.Provisioning.OperationalInsights.OperationalInsightsTable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="identifierName" Type="System.String" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
         <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifierName">
+        <param name="bicepIdentifier">
             The the Bicep identifier name of the OperationalInsightsTable resource.
             This can be used to refer to the resource in expressions, but is not
             the Azure name of the resource.  This value can contain letters,
@@ -287,18 +309,18 @@
       </Docs>
     </Member>
     <Member MemberName="RestoredLogs">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.OperationalInsights.OperationalInsightsTableRestoredLogs&gt; RestoredLogs { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.OperationalInsights.OperationalInsightsTableRestoredLogs&gt; RestoredLogs" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.OperationalInsights.OperationalInsightsTableRestoredLogs RestoredLogs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.OperationalInsights.OperationalInsightsTableRestoredLogs RestoredLogs" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.OperationalInsights.OperationalInsightsTable.RestoredLogs" />
-      <MemberSignature Language="VB.NET" Value="Public Property RestoredLogs As BicepValue(Of OperationalInsightsTableRestoredLogs)" />
-      <MemberSignature Language="F#" Value="member this.RestoredLogs : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.OperationalInsights.OperationalInsightsTableRestoredLogs&gt; with get, set" Usage="Azure.Provisioning.OperationalInsights.OperationalInsightsTable.RestoredLogs" />
+      <MemberSignature Language="VB.NET" Value="Public Property RestoredLogs As OperationalInsightsTableRestoredLogs" />
+      <MemberSignature Language="F#" Value="member this.RestoredLogs : Azure.Provisioning.OperationalInsights.OperationalInsightsTableRestoredLogs with get, set" Usage="Azure.Provisioning.OperationalInsights.OperationalInsightsTable.RestoredLogs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.OperationalInsights</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.OperationalInsights.OperationalInsightsTableRestoredLogs&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.OperationalInsights.OperationalInsightsTableRestoredLogs</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -309,18 +331,18 @@
       </Docs>
     </Member>
     <Member MemberName="ResultStatistics">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.OperationalInsights.OperationalInsightsTableResultStatistics&gt; ResultStatistics { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.OperationalInsights.OperationalInsightsTableResultStatistics&gt; ResultStatistics" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.OperationalInsights.OperationalInsightsTableResultStatistics ResultStatistics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.OperationalInsights.OperationalInsightsTableResultStatistics ResultStatistics" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.OperationalInsights.OperationalInsightsTable.ResultStatistics" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultStatistics As BicepValue(Of OperationalInsightsTableResultStatistics)" />
-      <MemberSignature Language="F#" Value="member this.ResultStatistics : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.OperationalInsights.OperationalInsightsTableResultStatistics&gt;" Usage="Azure.Provisioning.OperationalInsights.OperationalInsightsTable.ResultStatistics" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultStatistics As OperationalInsightsTableResultStatistics" />
+      <MemberSignature Language="F#" Value="member this.ResultStatistics : Azure.Provisioning.OperationalInsights.OperationalInsightsTableResultStatistics" Usage="Azure.Provisioning.OperationalInsights.OperationalInsightsTable.ResultStatistics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.OperationalInsights</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.OperationalInsights.OperationalInsightsTableResultStatistics&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.OperationalInsights.OperationalInsightsTableResultStatistics</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -354,18 +376,18 @@
       </Docs>
     </Member>
     <Member MemberName="Schema">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.OperationalInsights.OperationalInsightsSchema&gt; Schema { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.OperationalInsights.OperationalInsightsSchema&gt; Schema" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.OperationalInsights.OperationalInsightsSchema Schema { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.OperationalInsights.OperationalInsightsSchema Schema" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.OperationalInsights.OperationalInsightsTable.Schema" />
-      <MemberSignature Language="VB.NET" Value="Public Property Schema As BicepValue(Of OperationalInsightsSchema)" />
-      <MemberSignature Language="F#" Value="member this.Schema : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.OperationalInsights.OperationalInsightsSchema&gt; with get, set" Usage="Azure.Provisioning.OperationalInsights.OperationalInsightsTable.Schema" />
+      <MemberSignature Language="VB.NET" Value="Public Property Schema As OperationalInsightsSchema" />
+      <MemberSignature Language="F#" Value="member this.Schema : Azure.Provisioning.OperationalInsights.OperationalInsightsSchema with get, set" Usage="Azure.Provisioning.OperationalInsights.OperationalInsightsTable.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.OperationalInsights</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.OperationalInsights.OperationalInsightsSchema&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.OperationalInsights.OperationalInsightsSchema</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -376,18 +398,18 @@
       </Docs>
     </Member>
     <Member MemberName="SearchResults">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.OperationalInsights.OperationalInsightsTableSearchResults&gt; SearchResults { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.OperationalInsights.OperationalInsightsTableSearchResults&gt; SearchResults" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.OperationalInsights.OperationalInsightsTableSearchResults SearchResults { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.OperationalInsights.OperationalInsightsTableSearchResults SearchResults" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.OperationalInsights.OperationalInsightsTable.SearchResults" />
-      <MemberSignature Language="VB.NET" Value="Public Property SearchResults As BicepValue(Of OperationalInsightsTableSearchResults)" />
-      <MemberSignature Language="F#" Value="member this.SearchResults : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.OperationalInsights.OperationalInsightsTableSearchResults&gt; with get, set" Usage="Azure.Provisioning.OperationalInsights.OperationalInsightsTable.SearchResults" />
+      <MemberSignature Language="VB.NET" Value="Public Property SearchResults As OperationalInsightsTableSearchResults" />
+      <MemberSignature Language="F#" Value="member this.SearchResults : Azure.Provisioning.OperationalInsights.OperationalInsightsTableSearchResults with get, set" Usage="Azure.Provisioning.OperationalInsights.OperationalInsightsTable.SearchResults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.OperationalInsights</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.OperationalInsights.OperationalInsightsTableSearchResults&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.OperationalInsights.OperationalInsightsTableSearchResults</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -398,18 +420,18 @@
       </Docs>
     </Member>
     <Member MemberName="SystemData">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt; SystemData { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.SystemData&gt; SystemData" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.OperationalInsights.OperationalInsightsTable.SystemData" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As BicepValue(Of SystemData)" />
-      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;" Usage="Azure.Provisioning.OperationalInsights.OperationalInsightsTable.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.OperationalInsights.OperationalInsightsTable.SystemData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.OperationalInsights</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
