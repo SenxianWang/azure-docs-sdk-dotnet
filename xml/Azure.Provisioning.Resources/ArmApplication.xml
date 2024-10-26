@@ -1,15 +1,15 @@
 <Type Name="ArmApplication" FullName="Azure.Provisioning.Resources.ArmApplication">
-  <TypeSignature Language="C#" Value="public class ArmApplication : Azure.Provisioning.Primitives.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArmApplication extends Azure.Provisioning.Primitives.Resource" />
+  <TypeSignature Language="C#" Value="public class ArmApplication : Azure.Provisioning.Primitives.ProvisionableResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArmApplication extends Azure.Provisioning.Primitives.ProvisionableResource" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.Resources.ArmApplication" />
-  <TypeSignature Language="VB.NET" Value="Public Class ArmApplication&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type ArmApplication = class&#xA;    inherit Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class ArmApplication&#xA;Inherits ProvisionableResource" />
+  <TypeSignature Language="F#" Value="type ArmApplication = class&#xA;    inherit ProvisionableResource" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.Resource</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -20,22 +20,22 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ArmApplication (string identifierName, string? resourceVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identifierName, string resourceVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public ArmApplication (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Resources.ArmApplication.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (identifierName As String, Optional resourceVersion As String = Nothing)" />
-      <MemberSignature Language="F#" Value="new Azure.Provisioning.Resources.ArmApplication : string * string -&gt; Azure.Provisioning.Resources.ArmApplication" Usage="new Azure.Provisioning.Resources.ArmApplication (identifierName, resourceVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bicepIdentifier As String, Optional resourceVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Provisioning.Resources.ArmApplication : string * string -&gt; Azure.Provisioning.Resources.ArmApplication" Usage="new Azure.Provisioning.Resources.ArmApplication (bicepIdentifier, resourceVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="identifierName" Type="System.String" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
         <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifierName">
+        <param name="bicepIdentifier">
             The the Bicep identifier name of the ArmApplication resource.  This can
             be used to refer to the resource in expressions, but is not the Azure
             name of the resource.  This value can contain letters, numbers, and
@@ -138,18 +138,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreatedBy">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationDetails&gt; CreatedBy { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.ArmApplicationDetails&gt; CreatedBy" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.ArmApplicationDetails CreatedBy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.ArmApplicationDetails CreatedBy" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Resources.ArmApplication.CreatedBy" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedBy As BicepValue(Of ArmApplicationDetails)" />
-      <MemberSignature Language="F#" Value="member this.CreatedBy : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationDetails&gt;" Usage="Azure.Provisioning.Resources.ArmApplication.CreatedBy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedBy As ArmApplicationDetails" />
+      <MemberSignature Language="F#" Value="member this.CreatedBy : Azure.Provisioning.Resources.ArmApplicationDetails" Usage="Azure.Provisioning.Resources.ArmApplication.CreatedBy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationDetails&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.ArmApplicationDetails</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -160,18 +160,18 @@
       </Docs>
     </Member>
     <Member MemberName="CustomerSupport">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationPackageContact&gt; CustomerSupport { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.ArmApplicationPackageContact&gt; CustomerSupport" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.ArmApplicationPackageContact CustomerSupport { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.ArmApplicationPackageContact CustomerSupport" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Resources.ArmApplication.CustomerSupport" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomerSupport As BicepValue(Of ArmApplicationPackageContact)" />
-      <MemberSignature Language="F#" Value="member this.CustomerSupport : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationPackageContact&gt;" Usage="Azure.Provisioning.Resources.ArmApplication.CustomerSupport" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomerSupport As ArmApplicationPackageContact" />
+      <MemberSignature Language="F#" Value="member this.CustomerSupport : Azure.Provisioning.Resources.ArmApplicationPackageContact" Usage="Azure.Provisioning.Resources.ArmApplication.CustomerSupport" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationPackageContact&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.ArmApplicationPackageContact</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -182,12 +182,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Resources.ArmApplication.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="armApplication.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of ArmApplication.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FromExisting">
-      <MemberSignature Language="C#" Value="public static Azure.Provisioning.Resources.ArmApplication FromExisting (string identifierName, string? resourceVersion = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.Resources.ArmApplication FromExisting(string identifierName, string resourceVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public static Azure.Provisioning.Resources.ArmApplication FromExisting (string bicepIdentifier, string? resourceVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Provisioning.Resources.ArmApplication FromExisting(string bicepIdentifier, string resourceVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.Provisioning.Resources.ArmApplication.FromExisting(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (identifierName As String, Optional resourceVersion As String = Nothing) As ArmApplication" />
-      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.Resources.ArmApplication" Usage="Azure.Provisioning.Resources.ArmApplication.FromExisting (identifierName, resourceVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromExisting (bicepIdentifier As String, Optional resourceVersion As String = Nothing) As ArmApplication" />
+      <MemberSignature Language="F#" Value="static member FromExisting : string * string -&gt; Azure.Provisioning.Resources.ArmApplication" Usage="Azure.Provisioning.Resources.ArmApplication.FromExisting (bicepIdentifier, resourceVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning</AssemblyName>
@@ -197,11 +219,11 @@
         <ReturnType>Azure.Provisioning.Resources.ArmApplication</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="identifierName" Type="System.String" />
+        <Parameter Name="bicepIdentifier" Type="System.String" />
         <Parameter Name="resourceVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifierName">
+        <param name="bicepIdentifier">
             The the Bicep identifier name of the ArmApplication resource.  This can
             be used to refer to the resource in expressions, but is not the Azure
             name of the resource.  This value can contain letters, numbers, and
@@ -238,18 +260,18 @@
       </Docs>
     </Member>
     <Member MemberName="Identity">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationManagedIdentity&gt; Identity { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.ArmApplicationManagedIdentity&gt; Identity" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.ArmApplicationManagedIdentity Identity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.ArmApplicationManagedIdentity Identity" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Resources.ArmApplication.Identity" />
-      <MemberSignature Language="VB.NET" Value="Public Property Identity As BicepValue(Of ArmApplicationManagedIdentity)" />
-      <MemberSignature Language="F#" Value="member this.Identity : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationManagedIdentity&gt; with get, set" Usage="Azure.Provisioning.Resources.ArmApplication.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Identity As ArmApplicationManagedIdentity" />
+      <MemberSignature Language="F#" Value="member this.Identity : Azure.Provisioning.Resources.ArmApplicationManagedIdentity with get, set" Usage="Azure.Provisioning.Resources.ArmApplication.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationManagedIdentity&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.ArmApplicationManagedIdentity</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -260,18 +282,18 @@
       </Docs>
     </Member>
     <Member MemberName="JitAccessPolicy">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationJitAccessPolicy&gt; JitAccessPolicy { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.ArmApplicationJitAccessPolicy&gt; JitAccessPolicy" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.ArmApplicationJitAccessPolicy JitAccessPolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.ArmApplicationJitAccessPolicy JitAccessPolicy" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Resources.ArmApplication.JitAccessPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public Property JitAccessPolicy As BicepValue(Of ArmApplicationJitAccessPolicy)" />
-      <MemberSignature Language="F#" Value="member this.JitAccessPolicy : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationJitAccessPolicy&gt; with get, set" Usage="Azure.Provisioning.Resources.ArmApplication.JitAccessPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property JitAccessPolicy As ArmApplicationJitAccessPolicy" />
+      <MemberSignature Language="F#" Value="member this.JitAccessPolicy : Azure.Provisioning.Resources.ArmApplicationJitAccessPolicy with get, set" Usage="Azure.Provisioning.Resources.ArmApplication.JitAccessPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationJitAccessPolicy&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.ArmApplicationJitAccessPolicy</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -486,18 +508,18 @@
       </Docs>
     </Member>
     <Member MemberName="Plan">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmPlan&gt; Plan { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.ArmPlan&gt; Plan" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.ArmPlan Plan { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.ArmPlan Plan" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Resources.ArmApplication.Plan" />
-      <MemberSignature Language="VB.NET" Value="Public Property Plan As BicepValue(Of ArmPlan)" />
-      <MemberSignature Language="F#" Value="member this.Plan : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmPlan&gt; with get, set" Usage="Azure.Provisioning.Resources.ArmApplication.Plan" />
+      <MemberSignature Language="VB.NET" Value="Public Property Plan As ArmPlan" />
+      <MemberSignature Language="F#" Value="member this.Plan : Azure.Provisioning.Resources.ArmPlan with get, set" Usage="Azure.Provisioning.Resources.ArmApplication.Plan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmPlan&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.ArmPlan</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -552,18 +574,18 @@
       </Docs>
     </Member>
     <Member MemberName="Sku">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationSku&gt; Sku { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.ArmApplicationSku&gt; Sku" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.ArmApplicationSku Sku { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.ArmApplicationSku Sku" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Resources.ArmApplication.Sku" />
-      <MemberSignature Language="VB.NET" Value="Public Property Sku As BicepValue(Of ArmApplicationSku)" />
-      <MemberSignature Language="F#" Value="member this.Sku : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationSku&gt; with get, set" Usage="Azure.Provisioning.Resources.ArmApplication.Sku" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sku As ArmApplicationSku" />
+      <MemberSignature Language="F#" Value="member this.Sku : Azure.Provisioning.Resources.ArmApplicationSku with get, set" Usage="Azure.Provisioning.Resources.ArmApplication.Sku" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationSku&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.ArmApplicationSku</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -574,18 +596,18 @@
       </Docs>
     </Member>
     <Member MemberName="SupportUris">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationPackageSupportUris&gt; SupportUris { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.ArmApplicationPackageSupportUris&gt; SupportUris" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.ArmApplicationPackageSupportUris SupportUris { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.ArmApplicationPackageSupportUris SupportUris" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Resources.ArmApplication.SupportUris" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportUris As BicepValue(Of ArmApplicationPackageSupportUris)" />
-      <MemberSignature Language="F#" Value="member this.SupportUris : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationPackageSupportUris&gt;" Usage="Azure.Provisioning.Resources.ArmApplication.SupportUris" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportUris As ArmApplicationPackageSupportUris" />
+      <MemberSignature Language="F#" Value="member this.SupportUris : Azure.Provisioning.Resources.ArmApplicationPackageSupportUris" Usage="Azure.Provisioning.Resources.ArmApplication.SupportUris" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationPackageSupportUris&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.ArmApplicationPackageSupportUris</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -597,18 +619,18 @@
       </Docs>
     </Member>
     <Member MemberName="SystemData">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt; SystemData { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.SystemData&gt; SystemData" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.SystemData SystemData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.SystemData SystemData" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Resources.ArmApplication.SystemData" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As BicepValue(Of SystemData)" />
-      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;" Usage="Azure.Provisioning.Resources.ArmApplication.SystemData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemData As SystemData" />
+      <MemberSignature Language="F#" Value="member this.SystemData : Azure.Provisioning.Resources.SystemData" Usage="Azure.Provisioning.Resources.ArmApplication.SystemData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.SystemData&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.SystemData</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -641,18 +663,18 @@
       </Docs>
     </Member>
     <Member MemberName="UpdatedBy">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationDetails&gt; UpdatedBy { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.Resources.ArmApplicationDetails&gt; UpdatedBy" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.Resources.ArmApplicationDetails UpdatedBy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.Resources.ArmApplicationDetails UpdatedBy" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.Resources.ArmApplication.UpdatedBy" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdatedBy As BicepValue(Of ArmApplicationDetails)" />
-      <MemberSignature Language="F#" Value="member this.UpdatedBy : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationDetails&gt;" Usage="Azure.Provisioning.Resources.ArmApplication.UpdatedBy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdatedBy As ArmApplicationDetails" />
+      <MemberSignature Language="F#" Value="member this.UpdatedBy : Azure.Provisioning.Resources.ArmApplicationDetails" Usage="Azure.Provisioning.Resources.ArmApplication.UpdatedBy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.Resources.ArmApplicationDetails&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.Resources.ArmApplicationDetails</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

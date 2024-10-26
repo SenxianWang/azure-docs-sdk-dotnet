@@ -1,15 +1,15 @@
 <Type Name="KeyVaultAccessPolicy" FullName="Azure.Provisioning.KeyVault.KeyVaultAccessPolicy">
-  <TypeSignature Language="C#" Value="public class KeyVaultAccessPolicy : Azure.Provisioning.Primitives.ProvisioningConstruct" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyVaultAccessPolicy extends Azure.Provisioning.Primitives.ProvisioningConstruct" />
+  <TypeSignature Language="C#" Value="public class KeyVaultAccessPolicy : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyVaultAccessPolicy extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.KeyVault.KeyVaultAccessPolicy" />
-  <TypeSignature Language="VB.NET" Value="Public Class KeyVaultAccessPolicy&#xA;Inherits ProvisioningConstruct" />
-  <TypeSignature Language="F#" Value="type KeyVaultAccessPolicy = class&#xA;    inherit ProvisioningConstruct" />
+  <TypeSignature Language="VB.NET" Value="Public Class KeyVaultAccessPolicy&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type KeyVaultAccessPolicy = class&#xA;    inherit ProvisionableConstruct" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.KeyVault</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.ProvisioningConstruct</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -60,6 +60,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.KeyVault.KeyVaultAccessPolicy.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="keyVaultAccessPolicy.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.KeyVault</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of KeyVaultAccessPolicy.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ObjectId">
       <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;string&gt; ObjectId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;string&gt; ObjectId" />
@@ -85,18 +107,18 @@
       </Docs>
     </Member>
     <Member MemberName="Permissions">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.KeyVault.IdentityAccessPermissions&gt; Permissions { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.KeyVault.IdentityAccessPermissions&gt; Permissions" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.KeyVault.IdentityAccessPermissions Permissions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.KeyVault.IdentityAccessPermissions Permissions" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.KeyVault.KeyVaultAccessPolicy.Permissions" />
-      <MemberSignature Language="VB.NET" Value="Public Property Permissions As BicepValue(Of IdentityAccessPermissions)" />
-      <MemberSignature Language="F#" Value="member this.Permissions : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.KeyVault.IdentityAccessPermissions&gt; with get, set" Usage="Azure.Provisioning.KeyVault.KeyVaultAccessPolicy.Permissions" />
+      <MemberSignature Language="VB.NET" Value="Public Property Permissions As IdentityAccessPermissions" />
+      <MemberSignature Language="F#" Value="member this.Permissions : Azure.Provisioning.KeyVault.IdentityAccessPermissions with get, set" Usage="Azure.Provisioning.KeyVault.KeyVaultAccessPolicy.Permissions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.KeyVault</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.KeyVault.IdentityAccessPermissions&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.KeyVault.IdentityAccessPermissions</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

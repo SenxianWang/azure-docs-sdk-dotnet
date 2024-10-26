@@ -17,12 +17,16 @@
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
     <AssemblyVersion>1.6.0.0</AssemblyVersion>
     <AssemblyVersion>1.7.0.0</AssemblyVersion>
+    <AssemblyVersion>1.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary> Gets the status of the VolumeQuotaRule at the time the operation was called. </summary>
+    <summary>
+            Gets the status of the VolumeQuotaRule at the time the operation was called.
+            Serialized Name: ProvisioningState
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,15 +39,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppProvisioningState</ReturnType>
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary> Accepted. </summary>
+        <summary>
+            Accepted
+            Serialized Name: ProvisioningState.Accepted
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Creating">
@@ -55,15 +62,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppProvisioningState</ReturnType>
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary> Creating. </summary>
+        <summary>
+            Creating
+            Serialized Name: ProvisioningState.Creating
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Deleting">
@@ -75,15 +85,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppProvisioningState</ReturnType>
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary> Deleting. </summary>
+        <summary>
+            Deleting
+            Serialized Name: ProvisioningState.Deleting
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Failed">
@@ -95,15 +108,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppProvisioningState</ReturnType>
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary> Failed. </summary>
+        <summary>
+            Failed
+            Serialized Name: ProvisioningState.Failed
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Moving">
@@ -115,15 +131,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppProvisioningState</ReturnType>
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary> Moving. </summary>
+        <summary>
+            Moving
+            Serialized Name: ProvisioningState.Moving
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Patching">
@@ -135,15 +154,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppProvisioningState</ReturnType>
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary> Patching. </summary>
+        <summary>
+            Patching
+            Serialized Name: ProvisioningState.Patching
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Succeeded">
@@ -155,15 +177,18 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.NetApp</AssemblyName>
-        <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.7.0.0</AssemblyVersion>
+        <AssemblyVersion>1.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.NetApp.Models.NetAppProvisioningState</ReturnType>
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary> Succeeded. </summary>
+        <summary>
+            Succeeded
+            Serialized Name: ProvisioningState.Succeeded
+            </summary>
       </Docs>
     </Member>
   </Members>

@@ -1,15 +1,15 @@
 <Type Name="MongoDBPrivilege" FullName="Azure.Provisioning.CosmosDB.MongoDBPrivilege">
-  <TypeSignature Language="C#" Value="public class MongoDBPrivilege : Azure.Provisioning.Primitives.ProvisioningConstruct" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MongoDBPrivilege extends Azure.Provisioning.Primitives.ProvisioningConstruct" />
+  <TypeSignature Language="C#" Value="public class MongoDBPrivilege : Azure.Provisioning.Primitives.ProvisionableConstruct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MongoDBPrivilege extends Azure.Provisioning.Primitives.ProvisionableConstruct" />
   <TypeSignature Language="DocId" Value="T:Azure.Provisioning.CosmosDB.MongoDBPrivilege" />
-  <TypeSignature Language="VB.NET" Value="Public Class MongoDBPrivilege&#xA;Inherits ProvisioningConstruct" />
-  <TypeSignature Language="F#" Value="type MongoDBPrivilege = class&#xA;    inherit ProvisioningConstruct" />
+  <TypeSignature Language="VB.NET" Value="Public Class MongoDBPrivilege&#xA;Inherits ProvisionableConstruct" />
+  <TypeSignature Language="F#" Value="type MongoDBPrivilege = class&#xA;    inherit ProvisionableConstruct" />
   <AssemblyInfo>
     <AssemblyName>Azure.Provisioning.CosmosDB</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Azure.Provisioning.Primitives.ProvisioningConstruct</BaseTypeName>
+    <BaseTypeName>Azure.Provisioning.Primitives.ProvisionableConstruct</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -59,19 +59,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DefineProvisionableProperties">
+      <MemberSignature Language="C#" Value="protected override void DefineProvisionableProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefineProvisionableProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Provisioning.CosmosDB.MongoDBPrivilege.DefineProvisionableProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DefineProvisionableProperties ()" />
+      <MemberSignature Language="F#" Value="override this.DefineProvisionableProperties : unit -&gt; unit" Usage="mongoDBPrivilege.DefineProvisionableProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Provisioning.CosmosDB</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Define all the provisionable properties of MongoDBPrivilege.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Resource">
-      <MemberSignature Language="C#" Value="public Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.MongoDBPrivilegeResourceInfo&gt; Resource { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.BicepValue`1&lt;class Azure.Provisioning.CosmosDB.MongoDBPrivilegeResourceInfo&gt; Resource" />
+      <MemberSignature Language="C#" Value="public Azure.Provisioning.CosmosDB.MongoDBPrivilegeResourceInfo Resource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Provisioning.CosmosDB.MongoDBPrivilegeResourceInfo Resource" />
       <MemberSignature Language="DocId" Value="P:Azure.Provisioning.CosmosDB.MongoDBPrivilege.Resource" />
-      <MemberSignature Language="VB.NET" Value="Public Property Resource As BicepValue(Of MongoDBPrivilegeResourceInfo)" />
-      <MemberSignature Language="F#" Value="member this.Resource : Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.MongoDBPrivilegeResourceInfo&gt; with get, set" Usage="Azure.Provisioning.CosmosDB.MongoDBPrivilege.Resource" />
+      <MemberSignature Language="VB.NET" Value="Public Property Resource As MongoDBPrivilegeResourceInfo" />
+      <MemberSignature Language="F#" Value="member this.Resource : Azure.Provisioning.CosmosDB.MongoDBPrivilegeResourceInfo with get, set" Usage="Azure.Provisioning.CosmosDB.MongoDBPrivilege.Resource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Provisioning.CosmosDB</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Provisioning.BicepValue&lt;Azure.Provisioning.CosmosDB.MongoDBPrivilegeResourceInfo&gt;</ReturnType>
+        <ReturnType>Azure.Provisioning.CosmosDB.MongoDBPrivilegeResourceInfo</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
