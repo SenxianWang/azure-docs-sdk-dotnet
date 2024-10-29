@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -37,6 +38,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="vCpuCount" Type="Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmAttributeMinMaxInteger" />
@@ -61,6 +63,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmAttributeMinMaxInteger</ReturnType>
@@ -85,6 +88,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.ComputeFleet.Models.AcceleratorManufacturer&gt;</ReturnType>
@@ -109,6 +113,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmAttributeSupport&gt;</ReturnType>
@@ -133,6 +138,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.ComputeFleet.Models.AcceleratorType&gt;</ReturnType>
@@ -156,6 +162,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.ComputeFleet.Models.ArchitectureType&gt;</ReturnType>
@@ -176,6 +183,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmAttributeSupport&gt;</ReturnType>
@@ -196,6 +204,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.ComputeFleet.Models.CpuManufacturer&gt;</ReturnType>
@@ -216,6 +225,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmAttributeMinMaxInteger</ReturnType>
@@ -236,6 +246,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
@@ -256,6 +267,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -281,6 +293,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.ComputeFleet.Models.LocalStorageDiskType&gt;</ReturnType>
@@ -304,6 +317,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmAttributeMinMaxDouble</ReturnType>
@@ -327,6 +341,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmAttributeSupport&gt;</ReturnType>
@@ -347,6 +362,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmAttributeMinMaxDouble</ReturnType>
@@ -367,6 +383,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmAttributeMinMaxDouble</ReturnType>
@@ -387,6 +404,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmAttributeMinMaxDouble</ReturnType>
@@ -407,6 +425,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmAttributeMinMaxInteger</ReturnType>
@@ -427,6 +446,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmAttributeMinMaxInteger</ReturnType>
@@ -451,6 +471,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmAttributeSupport&gt;</ReturnType>
@@ -474,6 +495,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmAttributes</ReturnType>
@@ -506,6 +528,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -537,6 +560,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmAttributes</ReturnType>
@@ -569,6 +593,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -598,6 +623,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.BinaryData</ReturnType>
@@ -625,6 +651,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmAttributeMinMaxInteger</ReturnType>
@@ -645,6 +672,7 @@
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager.ComputeFleet</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Azure.ResourceManager.ComputeFleet.Models.ComputeFleetVmCategory&gt;</ReturnType>
